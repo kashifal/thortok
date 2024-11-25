@@ -1,5 +1,5 @@
 <template lang="">
-     <div class="2xl:max-w-7xl w-full mx-auto py-14 px-6">
+     <div class="2xl:max-w-7xl overflow-auto w-full mx-auto py-14 px-6">
         <h1 class="py-1 border-b border-black md:text-[18px] lg:text-[20px] font-[700] w-fit">Browse by collections</h1>
         <p class="lg:text-[17px] text-[15px] font-[300] pt-3">Discover endless possibilities with our curated digital
             resources, perfect for all your creative needs.</p>
