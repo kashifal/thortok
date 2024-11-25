@@ -74,6 +74,20 @@ const splideOptions = {
   perPage: 7, // Show one slide per view
   pagination: false, // Disable default pagination
   arrows: false, // Disable default arrows (we'll use custom)
+  breakpoints: {
+              1024: { // Tablet (max-width: 1024px)
+                gap: '0.5rem',
+                perPage: 5, // Show 3 slides
+              },
+              768: { // Mobile (max-width: 768px)
+                perPage: 4, // Show 1 slide
+                gap: 12,
+
+              },
+              423: { // Mobile (max-width: 768px)
+                perPage: 2, // Show 1 slide
+              }
+            }
 };
 
 const splideRef = ref(null); // Reference to Splide instance
