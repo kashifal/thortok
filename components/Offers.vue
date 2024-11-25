@@ -51,12 +51,21 @@
         <Splide
           class="mt-10"
           ref="splideRef"
+          
           :options="{
             type: 'loop',
             gap: '1rem',
             perPage: 4, // Show one slide per view
             pagination: false, // Disable default pagination
             arrows: false, // Disable default arrows (we'll use custom)
+            breakpoints: {
+              1024: { // Tablet (max-width: 1024px)
+                perPage: 2, // Show 3 slides
+              },
+              768: { // Mobile (max-width: 768px)
+                perPage: 1, // Show 1 slide
+              },
+            }
           }"
         >
           <SplideSlide
