@@ -12,22 +12,22 @@
 
         <div class="flex justify-between">
           <div class="flex flex-wrap gap-2 mb-8">
-            <button class="px-4 py-2 bg-gray-800 text-white">All</button>
-            <button class="px-4 py-2 border bg-gray-800 text-white">
+            <button class="px-4 rounded-[4px] py-2 bg-gray-800 text-white">All</button>
+            <button class="px-4 rounded-[4px] py-2 border bg-gray-800 text-white">
               Special offer
             </button>
-            <button class="px-4 py-2 border bg-gray-800 text-white">
+            <button class="px-4 rounded-[4px] py-2 border bg-gray-800 text-white">
               Mockups
             </button>
             <button
-              class="px-4 py-2 border border-[#005B52] bg-white text-black hover:text-white hover:bg-gray-800 duration-300"
+              class="px-4 py-2 rounded-[4px] border border-[#005B52] bg-white text-black hover:text-white hover:bg-gray-800 duration-300"
             >
               Stationery
             </button>
-            <button class="px-4 py-2 border bg-gray-800 text-white">
+            <button class="px-4 rounded-[4px] py-2 border bg-gray-800 text-white">
               Presets
             </button>
-            <button class="px-4 py-2 border bg-gray-800 text-white">
+            <button class="px-4 rounded-[4px] py-2 border bg-gray-800 text-white">
               Themes
             </button>
           </div>
@@ -293,4 +293,4 @@ const goPrev = () => {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>

@@ -22,7 +22,7 @@
 
     <div class="2xl:max-w-7xl pt-16  px-4 md:px-6 mx-auto">
        
-<div class=" text-white border-b border-gray-400 font-sans">
+<div class=" text-white border-b border-[#4b4b4b] font-sans">
     <div class="grid lg:grid-cols-2 gap-6  ">
       <div class="   p-8 ">
         <h1 class="text-3xl font-bold text-white mb-4">
@@ -138,7 +138,7 @@
               </div>
           </div>
           <img src="../public/img/formCloudfare.png" alt="" class="w-full h-20 object-cover">
-          <button class="py-[14px] w-full text-center justify-center leading-none my-5 text-white px-8 rounded-[4px] text-[17px] font-[400] flex items-center gap-2 shadow-[0px_4px_16px_0px_#DBF226] bg-black">
+          <button class="py-[14px] w-full text-center justify-center leading-none my-5 text-white px-8 rounded-[4px] text-[17px] font-[400] flex items-center gap-2 hover:shadow-[0px_4px_16px_0px_#DBF226] bg-black">
               GET STARTED
           </button>
   

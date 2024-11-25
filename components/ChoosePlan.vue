@@ -19,7 +19,7 @@
         <p class="text-gray-600 mt-2">
           Join Thtork today with our free plan and enjoy access to a curated selection of design assets, templates, and photos.
         </p>
-        <button class="mt-6 bg-[#DBF226] text-black py-4 w-full px-4  font-medium hover:bg-yellow-500">
+        <button class="mt-6 rounded-[4px] bg-[#DBF226] text-black py-4 w-full px-4  font-medium hover:bg-yellow-500">
           Get Started for Free!
         </button>
         </div>
@@ -90,7 +90,7 @@
             <span class="text-4xl font-bold text-gray-800">2.99</span>
             <span class="text-gray-500 text-sm">/month</span>
           </div>
-           <button class="bg-black mt-4 text-white py-2 px-4  font-medium hover:bg-gray-800 w-full">
+           <button class="bg-black hover:shadow-[0px_4px_16px_0px_#DBF226] rounded-[4px] mt-4 text-white py-2 px-4  font-medium hover:bg-opacity-90 w-full">
             Get monthly
           </button>
         </div>
@@ -100,7 +100,7 @@
             <span class="text-4xl font-bold text-gray-800">35.88</span>
             <span class="text-gray-500 text-sm">/Yearly</span>
           </div>
-           <button class="bg-black mt-4 text-white py-2 px-4  font-medium hover:bg-gray-800 w-full">
+           <button class="bg-black rounded-[4px] hover:shadow-[0px_4px_16px_0px_#DBF226] mt-4 text-white py-2 px-4  font-medium hover:bg-opacity-90 w-full">
             Get yearly
           </button>
         </div>

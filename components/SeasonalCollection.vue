@@ -8,13 +8,13 @@
         </div>
         <div class="flex items-center gap-2">
           <div
-          @click="goPrev"
+            @click="goPrev"
             class="bg-[#EFF1D9] cursor-pointer flex items-center justify-center size-[34px] rounded-full shadow-[0px_4px_16px_0px_#0000001A]"
           >
             <CarouselLeftArrow />
           </div>
           <div
-          @click="goNext"
+            @click="goNext"
             class="bg-[#EFF1D9] cursor-pointer flex items-center justify-center size-[34px] rounded-full shadow-[0px_4px_16px_0px_#0000001A]"
           >
             <CarouselRightArrow />
@@ -27,51 +27,23 @@
         ref="splideRef"
         :options="{
           type: 'loop',
-          gap: '1rem' ,
+          gap: '1rem',
           perPage: 4, // Show one slide per view
           pagination: false, // Disable default pagination
           arrows: false, // Disable default arrows (we'll use custom)
         }"
       >
+        <!-- Loop through the cards array -->
         <SplideSlide
-          class="min-h-[65px] w-[121px] sm:w-[134px] lg:w-[185px] xl:w-[273px] bg-[url('/public/img/img1.png')] bg-cover text-sm font-[700] bg-center overflow-hidden text-white rounded-[6px] flex items-center justify-center relative"
+          v-for="(card, index) in cards"
+          :key="index"
+          :style="{ backgroundImage: `url(${card.image})` }"
+          class="min-h-[65px] overflow-hidden w-[121px] sm:w-[134px] lg:w-[185px] xl:w-[273px] text-sm font-[700] bg-cover text-white rounded-[6px] flex items-center justify-center relative"
         >
           <div
             class="bg-[#00000099] z-[2] w-full h-full absolute top-0 left-0"
           ></div>
-          <p class="relative cursor-context-menu z-[4]">January 1</p>
-        </SplideSlide>
-        <SplideSlide
-          class="min-h-[65px] w-[121px] sm:w-[134px] lg:w-[185px] xl:w-[273px] bg-[url('/public/img/img2.png')] bg-cover text-sm font-[700] bg-center overflow-hidden text-white rounded-[6px] flex items-center justify-center relative"
-        >
-          <div
-            class="bg-[#00000099] z-[2] w-full h-full absolute top-0 left-0"
-          ></div>
-          <p class="relative cursor-context-menu z-[4]">January 7</p>
-        </SplideSlide>
-        <SplideSlide
-          class="min-h-[65px] w-[121px] sm:w-[134px] lg:w-[185px] xl:w-[273px] bg-[url('/public/img/img3.png')] bg-cover text-sm font-[700] bg-center overflow-hidden text-white rounded-[6px] flex items-center justify-center relative"
-        >
-          <div
-            class="bg-[#00000099] z-[2] w-full h-full absolute top-0 left-0"
-          ></div>
-          <p class="relative cursor-context-menu z-[4]">January 5</p>
-        </SplideSlide>
-        <SplideSlide
-          class="min-h-[65px] w-[121px] sm:w-[134px] lg:w-[185px] xl:w-[273px] bg-[url('/public/img/img4.png')] bg-cover text-sm font-[700] bg-center overflow-hidden text-white rounded-[6px] flex items-center justify-center relative"
-        >
-          <div
-            class="bg-[#00000099] z-[2] w-full h-full absolute top-0 left-0"
-          ></div>
-          <p class="relative cursor-context-menu z-[4]">January 13</p>
-        </SplideSlide>
-        <SplideSlide
-          class="min-h-[65px] w-[121px] sm:w-[134px] lg:w-[185px] xl:w-[273px] bg-[url('/public/img/hero_image.png')] bg-cover text-sm font-[700] bg-center overflow-hidden text-white rounded-[6px] flex items-center justify-center relative"
-        >
-          <div
-            class="bg-[#00000099] z-[2] w-full h-full absolute top-0 left-0"
-          ></div>
-          <p class="relative cursor-context-menu z-[4]">January 15</p>
+          <p class="relative cursor-context-menu z-[4]">{{ card.date }}</p>
         </SplideSlide>
       </Splide>
     </div>
@@ -88,6 +60,14 @@ import { ref } from "vue";
 
 const splideRef = ref(null); // Reference to Splide instance
 
+const cards = ref([
+  { image: '/img/img1.png', date: 'January 1' },
+  { image: '/img/img2.png', date: 'January 7' },
+  { image: '/img/img3.png', date: 'January 5' },
+  { image: '/img/img4.png', date: 'January 13' },
+  { image: '/img/hero_image.png', date: 'January 15' }
+]);
+
 const goNext = () => {
   const splideInstance = splideRef.value?.splide;
   if (splideInstance) splideInstance.go(">"); // Move to next slide
@@ -99,4 +79,4 @@ const goPrev = () => {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>

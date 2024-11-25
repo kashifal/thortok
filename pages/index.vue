@@ -3,11 +3,12 @@
     <Navbar />
     <Hero />
     <SeasonalCollection />
-    <FeaturesCreator />
-    <ChoosePlan />
     <Offers />
     <BrowseCollection />
     <FontsCollection />
+
+    <FeaturesCreator />
+    <ChoosePlan />
     <MonetizeTalent />
     <FreelanceService />
     <FAQ />
