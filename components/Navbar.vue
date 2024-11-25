@@ -65,7 +65,7 @@
         class="bg-white py-4 px-4 sm:px-6 flex items-center justify-between gap-4"
       >
         <div class="flex lg:items-center gap-8">
-          <div class="lg:hidden block cursor-pointer">
+          <div @click="toggleDrawer" class="lg:hidden block cursor-pointer">
             <HamBurger />
           </div>
           <a href="#" class="-ml-4 lg:ml-0">
@@ -73,51 +73,74 @@
             <NavLogo />
               
           </a>
-          <div
-            class="flex -translate-x-full lg:translate-x-0 lg:p-0 p-6 md:p-10 lg:font-[350] font-medium text-[2vw] lg:text-sm lg:text-black text-white lg:flex-row flex-col lg:relative fixed lg:h-auto h-screen lg:bg-transparent bg-black left-0 top-0 lg:w-auto w-[40%] gap-2 lg:gap-6"
-          >
-            <div class="absolute lg:hidden block right-2 top-2 cursor-pointer">
-            <Cross />
+           <div
+                class="flex -translate-x-full lg:translate-x-0 lg:p-0 p-6 md:p-10 lg:font-[350] font-medium text-[2vw] lg:text-sm lg:text-black text-white lg:flex-row flex-col lg:relative fixed lg:h-auto h-screen lg:bg-transparent bg-black left-0 top-0 lg:w-auto w-[40%] gap-2 lg:gap-3">
+                <div class="absolute lg:hidden block right-2 top-2 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                        <path fill="currentColor"
+                            d="M7.293 8L3.146 3.854a.5.5 0 1 1 .708-.708L8 7.293l4.146-4.147a.5.5 0 0 1 .708.708L8.707 8l4.147 4.146a.5.5 0 0 1-.708.708L8 8.707l-4.146 4.147a.5.5 0 0 1-.708-.708z" />
+                    </svg>
+                </div>
+                <a href="#" class="py-1 w-fit border-b border-white lg:border-black   ">Graphics</a>
+                <a href="#"
+                    class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black   ">Photos</a>
+                <a href="#"
+                    class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black   ">Fonts</a>
+                <a href="#"
+                    class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black   ">Videos</a>
+                <a href="#"
+                    class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black   ">Audio</a>
+                <a href="#"
+                    class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black   ">Sound
+                    Effects</a>
+                <a href="#"
+                    class="py-1 w-fit border-b border-transparent hover:border-white lg:hover:border-black   ">3D
+                    Elements</a>
             </div>
-            <a href="#" class="py-1 w-fit border-b border-white lg:border-black"
-              >Graphics</a
+ <transition class="lg:hidden flex " name="drawer-transition">
+          <div
+            v-show="isDrawerOpen"
+            class="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-50"
+            @click.self="toggleDrawer"
+          >
+            <div
+              class="bg-white relative p-6 w-3/5 h-full flex flex-col items-start space-y-4"
             >
-            <a
-              href="#"
-              class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black"
-              >Photos</a
-            >
-            <a
-              href="#"
-              class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black"
-              >Fonts</a
-            >
-            <a
-              href="#"
-              class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black"
-              >Videos</a
-            >
-            <a
-              href="#"
-              class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black"
-              >Audio</a
-            >
-            <a
-              href="#"
-              class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black"
-              >Sound Effects</a
-            >
-            <a
-              href="#"
-              class="py-1 w-fit border-b border-transparent hover:border-white lg:hover:border-black"
-              >3D Elements</a
-            >
+              <!-- Close Button -->
+              <div class="absolute top-4 right-4 cursor-pointer" @click="toggleDrawer">
+                <Cross />
+              </div>
+              
+              <!-- Drawer Menu Items -->
+              <a href="#" class="py-1 w-fit border-b border-white lg:border-black">
+                Graphics
+              </a>
+              <a href="#" class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black">
+                Photos
+              </a>
+              <a href="#" class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black">
+                Fonts
+              </a>
+              <a href="#" class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black">
+                Videos
+              </a>
+              <a href="#" class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black">
+                Audio
+              </a>
+              <a href="#" class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black">
+                Sound Effects
+              </a>
+              <a href="#" class="py-1 w-fit border-b border-transparent hover:border-white lg:hover:border-black">
+                3D Elements
+              </a>
+            </div>
           </div>
+        </transition>
         </div>
         <div class="flex items-center gap-6">
           <div class="flex items-center gap-2 md:gap-5">
             <button
-              class="bg-[#EFF1D9] md:flex hidden text-[13px] font-medium py-2 px-[14px] rounded-[4px] items-center gap-2"
+              class="bg-[#EFF1D9] xl:flex hidden text-[13px] font-medium py-2 px-[14px] rounded-[4px] items-center gap-2"
             >
               <AiTool />
               AI Tools
@@ -230,6 +253,7 @@
   </template>
   
 <script setup>
+import { ref } from 'vue'
 import Cross from '../icons/Cross'
 import NavLogo from '../icons/NavLogo'
 import AiTool from '../icons/AiTool'
@@ -239,4 +263,18 @@ import Message from '../icons/Message'
 import Save from '../icons/Save'
 import HamBurger from '../icons/HamBurger'
 
+const isDrawerOpen = ref(false)
+
+const toggleDrawer = () => {
+  isDrawerOpen.value = !isDrawerOpen.value
+}
 </script>
+<style scoped>
+.drawer-transition-enter-active,
+.drawer-transition-leave-active {
+  transition: opacity 0.3s ease;
+}
+.drawer-transition-enter, .drawer-transition-leave-to {
+  opacity: 0;
+}
+</style>
