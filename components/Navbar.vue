@@ -1,66 +1,39 @@
 <template>
     <div>
-      <div
-        class="bg-[#DBF226] relative w-full py-[15px] px-4 sm:px-6 flex items-center justify-center gap-2 md:gap-5"
-      >
-        <div
-          class="flex items-center gap-[3px] text-[8px] sm:text-[10px] md:text-[12px] lg:text-[13px] font-[700] text-center"
-        >
-          <div
-            class="bg-white sm:w-[13px] w-[10px] h-[20px] sm:h-[22px] md:w-4 lg:w-[18px] md:h-[31px] lg:h-[33px] rounded-[2px] md:rounded-[3px] lg:rounded-[4px] flex items-center justify-center leading-none cursor-pointer"
-          >
-            1
-          </div>
-          <div
-            class="bg-white sm:w-[13px] w-[10px] h-[20px] sm:h-[22px] md:w-4 lg:w-[18px] md:h-[31px] lg:h-[33px] rounded-[2px] md:rounded-[3px] lg:rounded-[4px] flex items-center justify-center leading-none cursor-pointer"
-          >
-            2
-          </div>
-          <div
-            class="h-[20px] sm:h-[22px] md:h-[31px] lg:h-[33px] rounded-[4px] flex items-center justify-center leading-none"
-          >
-            :
-          </div>
-          <div
-            class="bg-white sm:w-[13px] w-[10px] h-[20px] sm:h-[22px] md:w-4 lg:w-[18px] md:h-[31px] lg:h-[33px] rounded-[2px] md:rounded-[3px] lg:rounded-[4px] flex items-center justify-center leading-none cursor-pointer"
-          >
-            4
-          </div>
-          <div
-            class="bg-white sm:w-[13px] w-[10px] h-[20px] sm:h-[22px] md:w-4 lg:w-[18px] md:h-[31px] lg:h-[33px] rounded-[2px] md:rounded-[3px] lg:rounded-[4px] flex items-center justify-center leading-none cursor-pointer"
-          >
-            8
-          </div>
-          <div
-            class="h-[20px] sm:h-[22px] md:h-[31px] lg:h-[33px] rounded-[4px] flex items-center justify-center leading-none"
-          >
-            :
-          </div>
-          <div
-            class="bg-white sm:w-[13px] w-[10px] h-[20px] sm:h-[22px] md:w-4 lg:w-[18px] md:h-[31px] lg:h-[33px] rounded-[2px] md:rounded-[3px] lg:rounded-[4px] flex items-center justify-center leading-none cursor-pointer"
-          >
-            5
-          </div>
-          <div
-            class="bg-white sm:w-[13px] w-[10px] h-[20px] sm:h-[22px] md:w-4 lg:w-[18px] md:h-[31px] lg:h-[33px] rounded-[2px] md:rounded-[3px] lg:rounded-[4px] flex items-center justify-center leading-none cursor-pointer"
-          >
-            3
-          </div>
+    <div class="bg-[#DBF226] relative w-full py-[15px] px-4 sm:px-6 flex items-center justify-center gap-2 md:gap-5">
+      <div id="current-time" class="flex items-center gap-[3px] text-[8px] sm:text-[10px] md:text-[12px] lg:text-[13px] font-[700] text-center">
+        <!-- Hour Digits in Separate Boxes -->
+        <div id="hours" class="flex gap-1">
+          <div class="time-box bg-white sm:w-[13px] w-[10px] h-[20px] sm:h-[22px] md:w-4 lg:w-[18px] md:h-[31px] lg:h-[33px] rounded-[2px] md:rounded-[3px] lg:rounded-[4px] flex items-center justify-center leading-none" v-text="hours[0]"></div>
+          <div class="time-box bg-white sm:w-[13px] w-[10px] h-[20px] sm:h-[22px] md:w-4 lg:w-[18px] md:h-[31px] lg:h-[33px] rounded-[2px] md:rounded-[3px] lg:rounded-[4px] flex items-center justify-center leading-none" v-text="hours[1]"></div>
         </div>
-        <h1
-          class="font-[700] text-[8px] truncate sm:text-[10px] md:text-[12px] lg:text-sm"
-        >
-          Celebrate Khmer New Year with 30% off our contributor collections!
-        </h1>
-        <button
-          class="bg-[#0D0D0D] whitespace-nowrap py-[6px] md:py-[7px] lg:py-2 lg:px-[14px] md:px-3 px-[10px] rounded-[4px] lg:text-[13px] text-xs font-medium text-white"
-        >
-          Shop Now
-        </button>
-        <div class="sm:absolute shrink-0 right-3 cursor-pointer">
-          <NavCross />
+
+        <!-- Minutes Digits in Separate Boxes -->
+        <div id="minutes" class="flex gap-1">
+          <div class="time-box bg-white sm:w-[13px] w-[10px] h-[20px] sm:h-[22px] md:w-4 lg:w-[18px] md:h-[31px] lg:h-[33px] rounded-[2px] md:rounded-[3px] lg:rounded-[4px] flex items-center justify-center leading-none" v-text="minutes[0]"></div>
+          <div class="time-box bg-white sm:w-[13px] w-[10px] h-[20px] sm:h-[22px] md:w-4 lg:w-[18px] md:h-[31px] lg:h-[33px] rounded-[2px] md:rounded-[3px] lg:rounded-[4px] flex items-center justify-center leading-none" v-text="minutes[1]"></div>
+        </div>
+
+        <!-- Separator (:) -->
+        <div class="h-[20px] sm:h-[22px] md:h-[31px] lg:h-[33px] rounded-[4px] flex items-center justify-center leading-none">:</div>
+
+        <!-- Seconds Digits in Separate Boxes -->
+        <div id="seconds" class="flex gap-1">
+          <div class="time-box bg-white sm:w-[13px] w-[10px] h-[20px] sm:h-[22px] md:w-4 lg:w-[18px] md:h-[31px] lg:h-[33px] rounded-[2px] md:rounded-[3px] lg:rounded-[4px] flex items-center justify-center leading-none" v-text="seconds[0]"></div>
+          <div class="time-box bg-white sm:w-[13px] w-[10px] h-[20px] sm:h-[22px] md:w-4 lg:w-[18px] md:h-[31px] lg:h-[33px] rounded-[2px] md:rounded-[3px] lg:rounded-[4px] flex items-center justify-center leading-none" v-text="seconds[1]"></div>
         </div>
       </div>
+      <h1 class="font-[700] text-[8px] truncate sm:text-[10px] md:text-[12px] lg:text-sm">
+        Celebrate Khmer New Year with 30% off our contributor collections!
+      </h1>
+      <button class="bg-[#0D0D0D] whitespace-nowrap py-[6px] md:py-[7px] lg:py-[2px] lg:px-[14px] md:px-3 px-[10px] rounded-[4px] lg:text-[13px] text-xs font-medium text-white">
+        Shop Now
+      </button>
+      <div class="sm:absolute shrink-0 right-3 cursor-pointer">
+        <NavCross />
+      </div>
+    </div>
+
       <nav
         class="bg-white py-4 px-4 sm:px-6 flex items-center justify-between gap-4"
       >
@@ -251,9 +224,9 @@
       </nav>
     </div>
   </template>
-  
-<script setup>
-import { ref } from 'vue'
+
+  <script setup>
+import { ref, onMounted } from 'vue'
 import Cross from '../icons/Cross'
 import NavLogo from '../icons/NavLogo'
 import AiTool from '../icons/AiTool'
@@ -268,7 +241,30 @@ const isDrawerOpen = ref(false)
 const toggleDrawer = () => {
   isDrawerOpen.value = !isDrawerOpen.value
 }
+
+// Reactive time data
+const hours = ref(['0', '0']);
+const minutes = ref(['0', '0']);
+const seconds = ref(['0', '0']);
+
+// Update the time every second
+const updateTime = () => {
+  const now = new Date();
+  hours.value = String(now.getHours()).padStart(2, '0').split('');
+  minutes.value = String(now.getMinutes()).padStart(2, '0').split('');
+  seconds.value = String(now.getSeconds()).padStart(2, '0').split('');
+};
+
+// Start the clock
+onMounted(() => {
+  setInterval(updateTime, 1000);  // Update time every second
+  updateTime();  // Set the initial time
+});
 </script>
+
+
+
+
 <style scoped>
 .drawer-transition-enter-active,
 .drawer-transition-leave-active {
