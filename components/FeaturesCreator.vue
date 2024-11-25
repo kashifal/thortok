@@ -134,7 +134,7 @@
             alt="Product Image"
                         class="w-full rounded-md sm:h-[201px] h-[189px] md:h-[206px] object-cover"
 
-            class="w-full rounded-md sm:h-[201px] h-[189px] md:h-[236px] object-cover"
+            
           />
           <div class="py-4 pr-4">
             <div class="flex justify-between">
@@ -199,7 +199,7 @@
             alt="Product Image"
                         class="w-full rounded-md sm:h-[201px] h-[189px] md:h-[206px] object-cover"
 
-            class="w-full rounded-md sm:h-[201px] h-[189px] md:h-[236px] object-cover"
+            
           />
           <div class="py-4 pr-4">
             <div class="flex justify-between">
@@ -258,7 +258,7 @@
             src="https://s3-alpha-sig.figma.com/img/bff9/d1fc/948b1c5ebc0440eb4211f9c557c51183?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GH3glp1c4EC0grqv0UfXXIvsVxl37T7q1tMkXnpFEM-tijQ9byUKs2iLl8Kz5Bx1FvNUQkGl0XXoMv~RscfAHDtbEylswQ8b5TFZOefL3fo6k5h8Mvh-Ad4xgw~eME-ctAg4xsOp-QuBD04R9-ThJ2QOBj0nkVTTTdnZiSuDw58-ldF-oxVDnG9o69s6c1KicDgo54ncfsS11YemTpEMC~oHELdL2aSBqreMb8hpfVUVm0B2oIjzbZonab2dOm4nkhT2j2IMtkLxQRo3XWr2JuJuCFA5iSKHPLCKauVy7PYub5TUNZk1NrO70OxrRF1J50sup-gdDqhy~JhEZoWDkQ__"
             alt="Product Image"
                class="w-full rounded-md sm:h-[201px] h-[189px] md:h-[206px] object-cover"
-            class="w-full rounded-md sm:h-[201px] h-[189px] md:h-[236px] object-cover"
+            
           />
           <div class="py-4 pr-4">
             <div class="flex justify-between">
