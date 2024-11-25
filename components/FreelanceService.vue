@@ -1,0 +1,33 @@
+<template lang="">
+    <div class="2xl:max-w-7xl min-h-[507px] h-full grid lg:grid-cols-12 gap-10 mx-auto px-6 py-16">
+        <div class="lg:col-span-7 h-full overflow-hidden rounded-[10px]">
+            <img src="../public/img/FreelanceProgram.png" alt="" class="w-full h-full">
+        </div>
+        <div class="lg:col-span-5 h-full">
+            <div class="flex items-center gap-2">
+              <Freelance />                
+                    <h1 class="font-[700] text-[22px] sm:text-[26px] md:text-[30px] lg:text-[52px] ">
+                        Freelance<br />
+                    </h1>
+            </div>
+            <h1 class="font-[700] text-[22px] leading-none lg:flex-nowrap sm:text-[26px] md:text-[30px] lg:text-[52px] ">
+                Services <span class="font-[400] ">Program</span>
+            </h1>
+            <h3 class="md:text-[22px] text-[17px] sm:text-[20px] font-[400] py-4">Offer Your Services as a Freelance Expert</h3>
+            <p class="font-[300] text-[13px] sm:text-[15px] md:text-[17px]">Turn your skills into a source of income by offering freelance services directly on our platform. Whether you’re a designer, developer, or creative professional, connect with clients looking for your expertise. We’ll handle the payments, ensuring a smooth transaction so you can focus on delivering great results. Join the Freelance Services Program and start earning by providing high-quality services.</p>
+            <button class="py-[14px] leading-none mt-8 text-white px-8 rounded-[4px] text-[17px] font-[400] flex items-center gap-2 shadow-[0px_4px_16px_0px_#DBF226] bg-black">
+                Learn more 
+                <RightLongArrow />
+                
+                    
+            </button>
+        </div>
+    </div>
+</template>
+<script setup> 
+import Freelance from '../icons/Freelance.vue'
+import RightLongArrow from '../icons/RightLongArrow.vue'
+</script>
+<style lang="">
+    
+</style>
