@@ -6,13 +6,11 @@
     <Offers />
     <BrowseCollection />
     <FontsCollection />
-
     <FeaturesCreator />
     <ChoosePlan />
     <MonetizeTalent />
     <FreelanceService />
     <FAQ />
- 
     <Footer />
   </div>
 </template>

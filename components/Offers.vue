@@ -59,10 +59,16 @@
             pagination: false, // Disable default pagination
             arrows: false, // Disable default arrows (we'll use custom)
             breakpoints: {
-              1024: { // Tablet (max-width: 1024px)
-                perPage: 2, // Show 3 slides
+              1200: { // Tablet (max-width: 1200px)
+                perPage: 3, // Show 3 slides
               },
-              768: { // Mobile (max-width: 768px)
+              1024: { // Tablet (max-width: 1024px)
+                perPage: 2, // Show 2 slides
+              },
+              // 768: { // Mobile (max-width: 768px)
+              //   perPage: 2, // Show 1 slide
+              // },
+              600: { // Mobile (max-width: 530px)
                 perPage: 1, // Show 1 slide
               },
             }
