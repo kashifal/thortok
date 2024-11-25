@@ -3,7 +3,15 @@
     <Navbar />
     <Hero />
     <SeasonalCollection />
+    <FeaturesCreator />
+    <ChoosePlan />
     <Offers />
+    <BrowseCollection />
+    <FontsCollection />
+    <MonetizeTalent />
+    <FreelanceService />
+    <FAQ />
+    <Footer />
   </div>
 </template>
 
