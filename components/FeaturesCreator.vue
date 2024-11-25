@@ -44,7 +44,7 @@
           <img
             src="https://s3-alpha-sig.figma.com/img/c170/c53d/4b485e510001a9353f4535f387f9dc18?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JjIF~2PPSVtCXlmCigWgXcnYyl~HDlRJhYWD1Z5OWn0ROOkAVhhhuM1~SlLk4CXLVa-laqnwmLx-DlGT6G8zcURitAcpwV6Jm6-KyMFSuhz7D7f729CYpr7LBKfUYvafrHCIst3CCLGavBVG-4UTQUGUzZ7vZ5yn8t~0hIX3238kY2rgX72I7VQzvbfENr3cXgP6E1~eH~cy0Ef7N2hT7iYG4WgvZ2WkoPXNnUMT7jrSWTDPwX9In9KDBY3k4kTqgRke8Y9hoyJVDhx-NG8TR~omKHAy~Z~FJk7fNpOdMAlrPnNlSVVXAW7V9z7vuN4-kJjsqfh1oGwhkA9y3-XEiA__"
             alt="Product Image"
-            class="w-full rounded-md sm:h-[201px] h-[189px] md:h-[236px] object-cover"
+            class="w-full rounded-md sm:h-[201px] h-[189px] md:h-[206px] object-cover"
           />
           <div class="py-4 pr-4">
             <div class="flex justify-between">
@@ -116,7 +116,7 @@
           <img
             src="https://s3-alpha-sig.figma.com/img/a4d3/3630/f00982a2a13bf0df4fba4f557c466924?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SC3tB4brB~BFvr~Y4QZbTG1pA4q02eczFJFAoWtdkvO54y4OmU5cHZKdYhYpiheJV83EtXc812A7lwuQpe-MlI9ue9INUgGA4Ji6lj5TdxVxH3JGwtNIX42AzftLys~kVG6FW~Sr7UzgTcyGH0XBmRAvSsXWyrtN3hc2kcm~O-kPkQAGJy2feGCA0-NfFrcz4fRDGItcKGJqTOxwF9i1xKh4mrdPGa-YPR9meSlNTuPWN4ARJo5aCn4ob~QslRgGmE6Ly9lYswzXImc0fa9OBrslvKLwGjqOLDzK0zpRkGhTDx3BVLegT3GmTujNfyUVCyhlsvhCgz0MdPzIIhKNqA__"
             alt="Product Image"
-                        class="w-full rounded-md sm:h-[201px] h-[189px] md:h-[236px] object-cover"
+                        class="w-full rounded-md sm:h-[201px] h-[189px] md:h-[206px] object-cover"
 
           />
           <div class="py-4 pr-4">
@@ -183,7 +183,7 @@
           <img
             src="https://s3-alpha-sig.figma.com/img/ff12/6386/1b7e4071299e965383b02ecb2bd7e751?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZHErrS8qpyRmfFOL6dxL4ruGSRfWhJekZSudePD7D1a-8az4Ux~HVHhcbEGTPXtTqwYTKmN6jo4rGG-AVYcCyPCtUmPWxYe2UNWwErEDv6QwgkQWZc3Q9PhRbay3DEwI0FXTjjNlMGuaQTc39cXFoyKYH1ebX-Por~j-7hqcnwxV913enfomhNXJn5fhdGDYaqUGP2LpGBSwoEWs-SYhC0bn1o6jBBrC5HoCBLYrd3GfpmI5jtHDv-I6~fjx41nZRHBoM~9ePOEadnpnKIdum9hTI19LBs0ToZn57bHg~thP-r2m4rKr0z4e8FpfZOUWoZw04rqQUI-bGR0U8zTGSQ__"
             alt="Product Image"
-                        class="w-full rounded-md sm:h-[201px] h-[189px] md:h-[236px] object-cover"
+                        class="w-full rounded-md sm:h-[201px] h-[189px] md:h-[206px] object-cover"
 
           />
           <div class="py-4 pr-4">
@@ -246,7 +246,7 @@
           <img
             src="https://s3-alpha-sig.figma.com/img/bff9/d1fc/948b1c5ebc0440eb4211f9c557c51183?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GH3glp1c4EC0grqv0UfXXIvsVxl37T7q1tMkXnpFEM-tijQ9byUKs2iLl8Kz5Bx1FvNUQkGl0XXoMv~RscfAHDtbEylswQ8b5TFZOefL3fo6k5h8Mvh-Ad4xgw~eME-ctAg4xsOp-QuBD04R9-ThJ2QOBj0nkVTTTdnZiSuDw58-ldF-oxVDnG9o69s6c1KicDgo54ncfsS11YemTpEMC~oHELdL2aSBqreMb8hpfVUVm0B2oIjzbZonab2dOm4nkhT2j2IMtkLxQRo3XWr2JuJuCFA5iSKHPLCKauVy7PYub5TUNZk1NrO70OxrRF1J50sup-gdDqhy~JhEZoWDkQ__"
             alt="Product Image"
-               class="w-full rounded-md sm:h-[201px] h-[189px] md:h-[236px] object-cover"
+               class="w-full rounded-md sm:h-[201px] h-[189px] md:h-[206px] object-cover"
           />
           <div class="py-4 pr-4">
             <div class="flex justify-between">

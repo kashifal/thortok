@@ -4,7 +4,7 @@
     <p class="lg:text-[17px] text-[15px] font-[300] pt-3">Discover endless possibilities with our curated digital
       resources, perfect for all your creative needs.</p>
     <div class="sm:grid flex w-fit whitespace-nowrap overflow-auto sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-10 mt-10">
-      <div v-for="(card, index) in cards" :key="index" class="flex w-[257px] sm:w-auto flex-col gap-4">
+      <div v-for="(card, index) in cards" :key="index" class="flex group w-[257px] sm:w-auto flex-col gap-4">
         <div class="group-hover: relative rounded-[10px] h-fit w-fit overflow-hidden">
           <img :src="card.image" class="group-hover:scale-[0.98] transition-all duration-500 w-full" alt="">
           <div class="w-full h-full transition-all duration-300 group-hover:bg-black/30 absolute top-0 left-0"></div>
