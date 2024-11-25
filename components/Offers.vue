@@ -276,19 +276,20 @@ import CarouselLeftArrow from "../icons/CarouselLeftArrow";
 import CarouselRightArrow from "../icons/CarouselRightArrow";
 import Cart from "../icons/Cart";
 import { Splide, SplideSlide } from "@splidejs/vue-splide";
-import "@splidejs/splide/dist/css/splide.min.css";
+import "@splidejs/splide/dist/css/splide.min.css"; 
+
 import { ref } from "vue";
 
 const splideRef = ref(null); // Reference to Splide instance
 
 const goNext = () => {
   const splideInstance = splideRef.value?.splide;
-  if (splideInstance) splideInstance.go(">"); // Move to next slide
+   splideInstance.go(">"); // Move to next slide
 };
 
 const goPrev = () => {
   const splideInstance = splideRef.value?.splide;
-  if (splideInstance) splideInstance.go("<"); // Move to previous slide
+ splideInstance.go("<"); // Move to previous slide
 };
 </script>
 
