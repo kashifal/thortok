@@ -17,6 +17,7 @@
           </button>
         </div>
       </div>
+      
       <div class="flex items-center gap-2">
         <div @click="goPrev" class="bg-[#EFF1D9] cursor-pointer flex items-center justify-center size-[34px] rounded-full shadow-[0px_4px_16px_0px_#0000001A]">
           <CarouselLeftArrow />
@@ -26,10 +27,37 @@
         </div>
       </div>
     </div>
-    <Splide class="mt-10" ref="splideRef" :options="splideOptions">
+    <Splide
+    
+    class="mt-10" ref="splideRef" 
+    :options="{
+          type: 'loop',
+          perPage: 6, 
+          pagination: false,
+          arrows: false, 
+          gap: '0.5rem',
+          breakpoints: {
+            1350: { 
+                perPage: 11,
+              },
+              1024: { 
+                perPage: 6,
+              },
+              768: { 
+                perPage: 5,
+              },
+              630: {
+                perPage: 4, 
+              },
+              500: {
+                perPage: 3,
+              },
+            }
+        }
+    ">
       <!-- Loop through cards array to render each card -->
       <SplideSlide v-for="(card, index) in cards" :key="index">
-        <img :src="card.imgSrc" :alt="'Card ' + (index + 1)" :class="card.class" />
+        <img :src="card.imgSrc" :alt="'Card ' + (index + 1)" class="w-[122px] sm:w-[137px] md:w-[164px] h-[90px] lg:h-[141px] object-cover lg:w-[205px] xl:w-[211px] rounded-[7px] border-[#DBF226]" />
       </SplideSlide>
     </Splide>
   </div>
@@ -55,16 +83,16 @@ const buttons = [
 
 // Data for cards
 const cards = [
-  { imgSrc: "/img/smallCards1.png", class: "w-[122px] sm:w-[137px] md:w-[164px] h-[141px] object-cover lg:w-[205px] xl:w-[211px] rounded-[7px] border-[#DBF226]" },
-  { imgSrc: "/img/smallCards2.png", class: "w-[122px] sm:w-[137px] md:w-[164px] h-[141px] object-cover lg:w-[205px] xl:w-[211px] rounded-[7px] border-[#DBF226]" },
-  { imgSrc: "/img/smallCards3.png", class: "w-[122px] sm:w-[137px] md:w-[164px] h-[141px] object-cover lg:w-[205px] xl:w-[211px] rounded-[7px] border-[#DBF226]" },
-  { imgSrc: "/img/smallCards4.png", class: "w-[122px] sm:w-[137px] md:w-[164px] h-[141px] object-cover lg:w-[205px] xl:w-[211px] rounded-[7px] border-[#DBF226]" },
-  { imgSrc: "/img/smallCards5.png", class: "w-[122px] sm:w-[137px] md:w-[164px] h-[141px] object-cover lg:w-[205px] xl:w-[211px] rounded-[7px] border-[#DBF226]" },
-  { imgSrc: "/img/smallCards6.png", class: "w-[122px] sm:w-[137px] md:w-[164px] h-[141px] object-cover lg:w-[205px] xl:w-[211px] rounded-[7px] border-[#DBF226]" },
-  { imgSrc: "/img/smallCards7.png", class: "w-[122px] sm:w-[137px] md:w-[164px] h-[141px] object-cover lg:w-[205px] xl:w-[211px] rounded-[7px] border-[#DBF226]" },
-  { imgSrc: "/img/smallCards8.png", class: "w-[122px] sm:w-[137px] md:w-[164px] h-[141px] object-cover lg:w-[205px] xl:w-[211px] rounded-[7px] border-[#DBF226]" },
-  { imgSrc: "/img/smallCards9.png", class: "w-[122px] sm:w-[137px] md:w-[164px] h-[141px] object-cover lg:w-[205px] xl:w-[211px] rounded-[7px] border-[#DBF226]" },
-  { imgSrc: "/img/smallCards10.png", class: "w-[122px] sm:w-[137px] md:w-[164px] h-[141px] object-cover lg:w-[205px] xl:w-[211px] rounded-[7px] border-[#DBF226]" }
+  { imgSrc: "/img/smallCards1.png" },
+  { imgSrc: "/img/smallCards2.png" },
+  { imgSrc: "/img/smallCards3.png" },
+  { imgSrc: "/img/smallCards4.png" },
+  { imgSrc: "/img/smallCards5.png" },
+  { imgSrc: "/img/smallCards6.png" },
+  { imgSrc: "/img/smallCards7.png" },
+  { imgSrc: "/img/smallCards8.png" },
+  { imgSrc: "/img/smallCards9.png" },
+  { imgSrc: "/img/smallCards10.png" }
 ];
 
 // Splide options
