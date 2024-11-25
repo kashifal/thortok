@@ -72,45 +72,45 @@
                     class="py-1 w-fit border-b border-transparent hover:border-white lg:hover:border-black   ">3D
                     Elements</a>
             </div>
- <transition class="lg:hidden flex " name="drawer-transition">
-          <div
-            v-show="isDrawerOpen"
-            class="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-50"
-            @click.self="toggleDrawer"
-          >
-            <div
-              class="bg-white relative p-6 w-3/5 h-full flex flex-col items-start space-y-4"
-            >
-              <!-- Close Button -->
-              <div class="absolute top-4 right-4 cursor-pointer" @click="toggleDrawer">
-                <Cross />
-              </div>
-              
-              <!-- Drawer Menu Items -->
-              <a href="#" class="py-1 w-fit border-b border-white lg:border-black">
-                Graphics
-              </a>
-              <a href="#" class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black">
-                Photos
-              </a>
-              <a href="#" class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black">
-                Fonts
-              </a>
-              <a href="#" class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black">
-                Videos
-              </a>
-              <a href="#" class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black">
-                Audio
-              </a>
-              <a href="#" class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black">
-                Sound Effects
-              </a>
-              <a href="#" class="py-1 w-fit border-b border-transparent hover:border-white lg:hover:border-black">
-                3D Elements
-              </a>
-            </div>
-          </div>
-        </transition>
+<transition name="drawer-transition">
+    <div
+      v-show="isDrawerOpen"
+      class="fixed inset-0 bg-black bg-opacity-50 z-50"
+      @click.self="toggleDrawer"
+    >
+      <div
+        class="bg-white relative p-6 w-3/5 h-full flex flex-col items-start space-y-4 transform transition-transform"
+      >
+        <!-- Close Button -->
+        <div class="absolute top-4 right-4 cursor-pointer" @click="toggleDrawer">
+          <Cross />
+        </div>
+
+        <!-- Drawer Menu Items -->
+        <a href="#" class="py-1 w-fit border-b border-white lg:border-black">
+          Graphics
+        </a>
+        <a href="#" class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black">
+          Photos
+        </a>
+        <a href="#" class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black">
+          Fonts
+        </a>
+        <a href="#" class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black">
+          Videos
+        </a>
+        <a href="#" class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black">
+          Audio
+        </a>
+        <a href="#" class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black">
+          Sound Effects
+        </a>
+        <a href="#" class="py-1 w-fit border-b border-transparent hover:border-white lg:hover:border-black">
+          3D Elements
+        </a>
+      </div>
+    </div>
+  </transition>
         </div>
         <div class="flex items-center gap-6">
           <div class="flex items-center gap-2 md:gap-5">
@@ -245,34 +245,63 @@ const toggleDrawer = () => {
 }
 
 // Reactive time data
-const hours = ref(['0', '0']);
-const minutes = ref(['0', '0']);
-const seconds = ref(['0', '0']);
+const hours = ref([ '0', '5' ]);  // Start time (e.g., 5 hours)
+const minutes = ref([ '0', '0' ]);  // Start time (e.g., 0 minutes)
+const seconds = ref([ '0', '0' ]);  // Start time (e.g., 0 seconds)
 
 // Update the time every second
 const updateTime = () => {
-  const now = new Date();
-  hours.value = String(now.getHours()).padStart(2, '0').split('');
-  minutes.value = String(now.getMinutes()).padStart(2, '0').split('');
-  seconds.value = String(now.getSeconds()).padStart(2, '0').split('');
+  // Convert the time to total seconds
+  let totalSeconds = parseInt(hours.value.join('')) * 3600 + parseInt(minutes.value.join('')) * 60 + parseInt(seconds.value.join(''));
+
+  if (totalSeconds > 0) {
+    totalSeconds--;  // Decrement the total time by 1 second
+  }
+
+  // Calculate the new hours, minutes, and seconds
+  const newHours = Math.floor(totalSeconds / 3600);
+  const newMinutes = Math.floor((totalSeconds % 3600) / 60);
+  const newSeconds = totalSeconds % 60;
+
+  // Update the display
+  hours.value = String(newHours).padStart(2, '0').split('');
+  minutes.value = String(newMinutes).padStart(2, '0').split('');
+  seconds.value = String(newSeconds).padStart(2, '0').split('');
 };
 
-// Start the clock
+// Start the countdown
 onMounted(() => {
-  setInterval(updateTime, 1000);
-  updateTime();
+  setInterval(updateTime, 1000);  // Update the time every second
+  updateTime();  // Initial time update
 });
+
 </script>
 
 
 
 
 <style scoped>
-.drawer-transition-enter-active,
-.drawer-transition-leave-active {
-  transition: opacity 0.3s ease;
+/* Drawer transition styles */
+.drawer-transition-enter-active, .drawer-transition-leave-active {
+  transition: transform 0.8s cubic-bezier(0.25, 1, 0.5, 1), opacity 0.8s ease-out;
 }
-.drawer-transition-enter, .drawer-transition-leave-to {
+
+.drawer-transition-enter {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.drawer-transition-enter-to {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.drawer-transition-leave-active {
+  transition: transform 0.8s ease-in, opacity 0.8s ease-in;
+}
+
+.drawer-transition-leave-to {
+  transform: translateX(-100%);
   opacity: 0;
 }
 </style>

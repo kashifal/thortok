@@ -1,119 +1,82 @@
 <template>
   <div>
     <div class="2xl:max-w-7xl overflow-hidden w-full mx-auto pt-14 px-6">
-      <!-- Header Section -->
       <div class="flex items-center justify-between gap-2 flex-wrap">
         <div class="flex items-center gap-2">
           <SeasonalCollection />
           <p class="text-[17px] font-[700]">Discover Seasonal Collections</p>
         </div>
         <div class="flex items-center gap-2">
-          <!-- Left Arrow -->
           <div
+            @click="goPrev"
             class="bg-[#EFF1D9] cursor-pointer flex items-center justify-center size-[34px] rounded-full shadow-[0px_4px_16px_0px_#0000001A]"
-            @click="goToPrevSlide"
           >
             <CarouselLeftArrow />
           </div>
-          <!-- Right Arrow -->
           <div
+            @click="goNext"
             class="bg-[#EFF1D9] cursor-pointer flex items-center justify-center size-[34px] rounded-full shadow-[0px_4px_16px_0px_#0000001A]"
-            @click="goToNextSlide"
           >
             <CarouselRightArrow />
           </div>
         </div>
       </div>
 
-      <!-- Swiper Section -->
-      <swiper
-        ref="swiperInstance"
-        :space-between="15"
-        :loop="true"
-        :breakpoints="{
-          1024: { slidesPerView: 5 },
-          768: { slidesPerView: 3 },
-          0: { slidesPerView: 2 }
+      <Splide
+        class="mt-10"
+        ref="splideRef"
+        :options="{
+          type: 'loop',
+          gap: '1rem',
+          perPage: 4, // Show one slide per view
+          pagination: false, // Disable default pagination
+          arrows: false, // Disable default arrows (we'll use custom)
         }"
-        class="mySwiper mt-10"
-        @swiper="onSwiperInit"
       >
-        <!-- Slides -->
-        <swiper-slide
-          v-for="(slide, index) in slides"
+        <!-- Loop through the cards array -->
+        <SplideSlide
+          v-for="(card, index) in cards"
           :key="index"
-          class="min-h-[65px] h-full w-[121px] sm:w-[134px] lg:w-[185px] xl:w-[273px] bg-cover text-sm font-[700] bg-center overflow-hidden text-white rounded-[6px] flex items-center justify-center relative"
-          :style="{ backgroundImage: `url(${slide.img})` }"
+          :style="{ backgroundImage: `url(${card.image})` }"
+          class="min-h-[65px] overflow-hidden w-[121px] sm:w-[134px] lg:w-[185px] xl:w-[273px] text-sm font-[700] bg-cover text-white rounded-[6px] flex items-center justify-center relative"
         >
-          <div class="bg-[#00000099] z-[2] w-full h-full absolute top-0 left-0"></div>
-          <p class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-center w-full cursor-context-menu z-[4]">
-            {{ slide.label }}
-          </p>
-        </swiper-slide>
-      </swiper>
+          <div
+            class="bg-[#00000099] z-[2] w-full h-full absolute top-0 left-0"
+          ></div>
+          <p class="relative cursor-context-menu z-[4]">{{ card.date }}</p>
+        </SplideSlide>
+      </Splide>
     </div>
   </div>
 </template>
 
 <script setup>
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/swiper-bundle.css';
+import SeasonalCollection from "../icons/SeaseonalCollection";
+import CarouselLeftArrow from "../icons/CarouselLeftArrow";
+import CarouselRightArrow from "../icons/CarouselRightArrow";
+import { Splide, SplideSlide } from "@splidejs/vue-splide";
+import "@splidejs/splide/dist/css/splide.min.css";
+import { ref } from "vue";
 
-import { ref, onMounted } from 'vue';
-import SeasonalCollection from '../icons/SeaseonalCollection';
-import CarouselLeftArrow from '../icons/CarouselLeftArrow';
-import CarouselRightArrow from '../icons/CarouselRightArrow';
+const splideRef = ref(null); // Reference to Splide instance
 
-// Swiper instance reference
-const swiperInstance = ref(null);
+const cards = ref([
+  { image: '/img/img1.png', date: 'January 1' },
+  { image: '/img/img2.png', date: 'January 7' },
+  { image: '/img/img3.png', date: 'January 5' },
+  { image: '/img/img4.png', date: 'January 13' },
+  { image: '/img/hero_image.png', date: 'January 15' }
+]);
 
-// Slide data
-const slides = [
-  { img: '/img/img1.png', label: 'January 1' },
-  { img: '/img/img2.png', label: 'January 7' },
-  { img: '/img/img3.png', label: 'January 5' },
-  { img: '/img/img4.png', label: 'January 13' },
-  { img: '/img/hero_image.png', label: 'January 15' },
-  { img: '/img/img1.png', label: 'January 1' },
-  { img: '/img/img2.png', label: 'January 7' },
-  { img: '/img/img3.png', label: 'January 5' },
-  { img: '/img/img4.png', label: 'January 13' },
-  { img: '/img/hero_image.png', label: 'January 15' },
-];
-
-// Navigation functions
-const goToPrevSlide = () => {
-  if (swiperInstance.value) {
-    swiperInstance.value.swiper.slidePrev();
-  }
+const goNext = () => {
+  const splideInstance = splideRef.value?.splide;
+  if (splideInstance) splideInstance.go(">"); // Move to next slide
 };
 
-const goToNextSlide = () => {
-  if (swiperInstance.value) {
-    swiperInstance.value.swiper.slideNext();
-  }
+const goPrev = () => {
+  const splideInstance = splideRef.value?.splide;
+  if (splideInstance) splideInstance.go("<"); // Move to previous slide
 };
-
-// Ensure Swiper is initialized correctly
-const onSwiperInit = (swiper) => {
-  // Assign the swiper instance when it is initialized
-  swiperInstance.value = swiper;
-  console.log('Swiper initialized:', swiperInstance.value);
-};
-
-// Ensure Swiper is initialized and log it
-onMounted(() => {
-  if (swiperInstance.value) {
-    console.log('Swiper is initialized:', swiperInstance.value);
-  } else {
-    console.error('Swiper instance is not initialized.');
-  }
-});
 </script>
 
-<style scoped>
-.mySwiper {
-  display: flex;
-  gap: 15px;
-}
-</style>
+<style scoped></style>
