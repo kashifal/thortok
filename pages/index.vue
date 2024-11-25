@@ -11,6 +11,7 @@
     <MonetizeTalent />
     <FreelanceService />
     <FAQ />
+ 
     <Footer />
   </div>
 </template>
