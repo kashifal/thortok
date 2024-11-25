@@ -273,4 +273,4 @@ import CarouselRightArrow from '../icons/CarouselRightArrow'
 import Cart from '../icons/Cart'
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped></style>

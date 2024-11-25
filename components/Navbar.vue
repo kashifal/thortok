@@ -8,6 +8,8 @@
           <div class="time-box bg-white sm:w-[13px] w-[10px] h-[20px] sm:h-[22px] md:w-4 lg:w-[18px] md:h-[31px] lg:h-[33px] rounded-[2px] md:rounded-[3px] lg:rounded-[4px] flex items-center justify-center leading-none" v-text="hours[1]"></div>
         </div>
 
+        <div class="h-[20px] sm:h-[22px] md:h-[31px] lg:h-[33px] rounded-[4px] flex items-center justify-center leading-none">:</div>
+
         <!-- Minutes Digits in Separate Boxes -->
         <div id="minutes" class="flex gap-1">
           <div class="time-box bg-white sm:w-[13px] w-[10px] h-[20px] sm:h-[22px] md:w-4 lg:w-[18px] md:h-[31px] lg:h-[33px] rounded-[2px] md:rounded-[3px] lg:rounded-[4px] flex items-center justify-center leading-none" v-text="minutes[0]"></div>
@@ -30,7 +32,7 @@
         Shop Now
       </button>
       <div class="sm:absolute shrink-0 right-3 cursor-pointer">
-        <NavCross />
+        <Cross />
       </div>
     </div>
 
@@ -257,8 +259,8 @@ const updateTime = () => {
 
 // Start the clock
 onMounted(() => {
-  setInterval(updateTime, 1000);  // Update time every second
-  updateTime();  // Set the initial time
+  setInterval(updateTime, 1000);
+  updateTime();
 });
 </script>
 
