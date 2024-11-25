@@ -100,7 +100,7 @@
                 </div>
               </div>
               <h1 class="mt-3 -mb-2 text-xl font-bold">Sala Blue</h1>
-              <div class="mt-4 flex items-center w-full gap-2 -mb-3">
+              <div class="mt-4 flex flex-wrap items-center w-full gap-2 -mb-3">
                 <button
                   class="bg-black text-white px-3 sm:text-sm text-[11px] shadow-md shadow-[#DBF226] py-2 rounded-md flex gap-1 justify-center items-center"
                 >
@@ -148,7 +148,7 @@
                 </div>
               </div>
               <h1 class="mt-3 -mb-2 text-xl font-bold">Organic Orange</h1>
-              <div class="mt-4 flex items-center w-full gap-2 -mb-3">
+              <div class="mt-4 flex flex-wrap items-center w-full gap-2 -mb-3">
                 <button
                   class="bg-[#DBF226] text-black px-3 sm:text-sm text-[11px] py-2 rounded-md flex gap-1 justify-center items-center"
                 >
@@ -196,7 +196,7 @@
                 </div>
               </div>
               <h1 class="mt-3 -mb-2 text-xl font-bold">Geo Art</h1>
-              <div class="mt-4 flex items-center w-full gap-2 -mb-3">
+              <div class="mt-4 flex flex-wrap items-center w-full gap-2 -mb-3">
                 <button
                   class="bg-[#DBF226] text-black px-3 sm:text-sm text-[11px] py-2 rounded-md flex gap-1 justify-center items-center"
                 >
@@ -244,7 +244,7 @@
                 </div>
               </div>
               <h1 class="mt-3 -mb-2 text-xl font-bold">Passion Crea</h1>
-              <div class="mt-4 flex items-center w-full gap-2 -mb-3">
+              <div class="mt-4 flex flex-wrap items-center w-full gap-2 -mb-3">
                 <button
                   class="bg-[#DBF226] text-black px-3 sm:text-sm text-[11px] py-2 rounded-md flex gap-1 justify-center items-center"
                 >
