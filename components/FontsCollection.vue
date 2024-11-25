@@ -1,7 +1,7 @@
 <template lang="html">
-  <div class="py-14 px-6">
-    <div class="flex items-center 2xl:max-w-7xl w-full mx-auto justify-between gap-2 flex-wrap">
-      <div class="items-center gap-2">
+  <div class="py-14 relative px-6">
+    <div class="flex  items-center 2xl:max-w-7xl w-full mx-auto justify-between gap-2 flex-wrap">
+      <div class="items-center  gap-2">
         <p class="text-[17px] font-[700]">Fonts collection</p>
         <p class="lg:text-[17px] text-[15px] font-[300] pt-3">
           Find the perfect fonts to give your designs a unique and professional touch.
@@ -17,8 +17,21 @@
           </button>
         </div>
       </div>
-      
-      <div class="flex items-center gap-2">
+      <div class="gap-2 mt-[7rem] w-full flex items-center justify-between   absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40   md:hidden">
+        <div
+          @click="goPrev"
+          class="w-8 flex items-center justify-center h-8 rounded-full cursor-pointer bg-[#EFF1D9]"
+        >
+          <CarouselLeftArrow />
+        </div>
+        <div
+          @click="goNext"
+          class="w-8 flex items-center justify-center h-8   rounded-full cursor-pointer bg-[#EFF1D9]"
+        >
+          <CarouselRightArrow />
+        </div>
+      </div>
+      <div class="md:flex hidden items-center gap-2">
         <div @click="goPrev" class="bg-[#EFF1D9] cursor-pointer flex items-center justify-center size-[34px] rounded-full shadow-[0px_4px_16px_0px_#0000001A]">
           <CarouselLeftArrow />
         </div>

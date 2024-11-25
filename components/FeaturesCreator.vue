@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="bg-[#EFF1D9] my-20 sm:p-6 p-4">
+  <div class="bg-[#EFF1D9] my-20 relative sm:p-6 p-4">
     <section class="max-w-7xl mx-auto">
       <div class="underline sm:underline-offset-[16px] underline-offset-4">
         <h2
@@ -15,6 +15,20 @@
             Discover the unique talents and inspiring creations of this week’s
             standout contributors.
           </h1>
+        </div>
+        <div class="gap-2 mt-28 w-full flex items-center justify-between   absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40   md:hidden">
+          <div
+            @click="goPrev"
+            class="w-8 flex items-center justify-center h-8 rounded-full cursor-pointer bg-white"
+          >
+            <CarouselLeftArrow />
+          </div>
+          <div
+            @click="goNext"
+            class="w-8 flex items-center justify-center h-8   rounded-full cursor-pointer bg-white"
+          >
+            <CarouselRightArrow />
+          </div>
         </div>
 
         <div class="gap-2 -mt-1 hidden sm:flex">
@@ -34,24 +48,30 @@
       </div>
 
       <Splide
-        class="mt-10"
-        ref="splideRef"
-        :options="{
-          type: 'loop',
-          gap: '1rem',
-          perPage: 4, // Show one slide per view
-          pagination: false, // Disable default pagination
-          arrows: false, // Disable default arrows (we'll use custom)
-          breakpoints: {
-            1024: { // Tablet (max-width: 1024px)
-              perPage: 2, // Show 3 slides
-            },
-            768: { // Mobile (max-width: 768px)
-              perPage: 1, // Show 1 slide
-            },
-          }
-        }"
-      >
+      class="mt-10"
+      ref="splideRef"
+      :options="{
+        type: 'loop',
+        gap: '1rem',
+        perPage: 5, // Default for screens above 1440px
+        pagination: false, // Disable default pagination
+        arrows: false, // Disable default arrows
+        breakpoints: {
+          1700: { // Screens under 1440px
+            perPage: 4,
+          },
+          1023: { // Screens under 1023px
+            perPage: 3,
+          },
+          768: { // Screens under 768px
+            perPage: 2,
+          },
+          424: { // Screens under 424px
+            perPage: 1,
+          },
+        },
+      }"
+    >
         <SplideSlide
           class="bg-black text-white py-5 px-5 shadow-md rounded-lg overflow-hidden"
         >

@@ -1,7 +1,7 @@
 <template>
   <div class="mt-8">
-    <div class="sm:p-6 p-4">
-      <section class="2xl:max-w-7xl py-5 px-6 rounded-xl bg-[#EFF1D9] mx-auto">
+    <div class="sm:p-6">
+      <section class="2xl:max-w-7xl relative py-5 px-6 rounded-xl bg-[#EFF1D9] mx-auto">
         <h2 class="text-2xl font-bold text-gray-800 mb-4">
           Discover our current offers
         </h2>
@@ -32,7 +32,21 @@
             </button>
           </div>
 
-          <div class="gap-2 mt-2 hidden sm:flex">
+          <div class="gap-2 mt-44 w-full flex items-center justify-between   absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40   md:hidden">
+            <div
+              @click="goPrev"
+              class="w-10 flex items-center justify-center h-10 rounded-full cursor-pointer bg-white"
+            >
+              <CarouselLeftArrow />
+            </div>
+            <div
+              @click="goNext"
+              class="w-10 flex items-center justify-center h-10   rounded-full cursor-pointer bg-white"
+            >
+              <CarouselRightArrow />
+            </div>
+          </div>
+          <div class="gap-2 mt-2 hidden md:flex">
             <div
               @click="goPrev"
               class="p-2 h-8 rounded-full cursor-pointer bg-white"

@@ -1,12 +1,26 @@
 <template>
   <div>
-    <div class="2xl:max-w-7xl overflow-hidden w-full mx-auto pt-14 px-6">
-      <div class="flex items-center justify-between gap-2 flex-wrap">
+    <div class="2xl:max-w-7xl   relative w-full mx-auto pt-14 px-6">
+      <div class="flex items-center  justify-between gap-2 flex-wrap">
         <div class="flex items-center gap-2">
           <SeasonalCollection />
           <p class="text-[17px] font-[700]">Discover Seasonal Collections</p>
         </div>
-        <div class="flex items-center gap-2">
+        <div class="gap-2 mt-16 w-full flex items-center justify-between   absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40   md:hidden">
+          <div
+            @click="goPrev"
+            class="w-8 flex items-center justify-center h-8 rounded-full cursor-pointer bg-[#EFF1D9]"
+          >
+            <CarouselLeftArrow />
+          </div>
+          <div
+            @click="goNext"
+            class="w-8 flex items-center justify-center h-8   rounded-full cursor-pointer bg-[#EFF1D9]"
+          >
+            <CarouselRightArrow />
+          </div>
+        </div>
+        <div class="md:flex hidden items-center gap-2">
           <div
             @click="goPrev"
             class="bg-[#EFF1D9] cursor-pointer flex items-center justify-center size-[34px] rounded-full shadow-[0px_4px_16px_0px_#0000001A]"
