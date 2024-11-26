@@ -5,7 +5,7 @@
         </div>
         <div class="lg:col-span-5 h-full">
             <div class="flex items-center gap-2">
-              <Freelance />                
+              <Freelance class="sm:w-auto w-6" />                
                     <h1 class="font-[700] text-[22px] sm:text-[26px] md:text-[30px] lg:text-[52px] ">
                         Freelance<br />
                     </h1>

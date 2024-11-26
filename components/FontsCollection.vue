@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="py-14 relative pl-6 md:px-6">
+  <div class="pb-14 pt-6 relative pl-6 md:px-6">
     <div
       class=" 2xl:max-w-7xl w-full mx-auto gap-2 flex-wrap"
     >

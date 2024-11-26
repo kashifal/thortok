@@ -1,11 +1,11 @@
 <template lang="">
   
 <div class="">
-  <div class="max-w-7xl mx-auto p-6">
+  <div class="max-w-7xl mx-auto py-6 px-4">
     
     <div class="text-start mb-6">
       <h1 class="text-3xl font-bold mb-5 text-gray-800">Choose the Plan That Fits Your Needs</h1>
-      <p class="text-gray-600 mt-2">
+      <p class="sm:text-[15px] text-[13px] mt-2">
         Whether you're starting for free or ready to unlock all features, we have a plan for you.
       </p>
     </div>
@@ -24,7 +24,7 @@
         </button>
         </div>
         <div>
-        <ul class="mt-6 space-y-4 text-gray-700">
+        <ul class="mt-6 space-y-4 sm:text-sm text-[10px] text-[#191919]">
           <h1 class="text-[17px] font-[700] text-[#191919]">No commitment required:</h1>
 
   <li class="flex items-center gap-2">
@@ -60,13 +60,13 @@
         <div class="md:flex gap-8 ">
           <div class="md:w-1/2">
         <h2 class="text-xl font-bold text-gray-800">Pro Plan</h2>
-        <p class="text-gray-600 mt-2">
+        <p class="sm:text-[15px] text-[13px] mt-2">
           Take your projects to the next level with Thtork's Pro Plan. Get unlimited downloads, access to premium design assets, exclusive templates, and priority support. Unlock all the tools you need to bring your creative ideas to life.
         </p>
         </div>
         <div class="">
         </div>
-        <ul class="mt-6 font-[700] space-y-4 text-gray-700">
+        <ul class="mt-6 font-[700] sm:text-sm text-[10px] space-y-4 text-[#191919]">
           <h1 class="text-[17px] font-[700] text-[#191919]">Pro Plan includes:</h1>
 
           <li class="flex items-center gap-2">
@@ -109,7 +109,7 @@
            <button class="bg-black hover:shadow-[0px_4px_16px_0px_#DBF226] rounded-[4px] mt-4 text-white py-[16px] px-4  font-medium hover:bg-opacity-90 w-full">
             Get Year
           </button>
-          <div class="bg-[#DBF226] absolute right-0 top-4 h-[33px] text-sm px-[14px] font-[700] w-fit rounded-[6px] flex items-center justify-center">
+          <div class="bg-[#DBF226] absolute right-0 sm:right-0 lg:right-0 md:-right-4 top-7 sm:top-4 h-[25px] sm:h-[33px] text-[10px] sm:text-sm px-[14px] font-[700] w-fit rounded-[6px] flex items-center justify-center">
             2 months free
           </div>
         </div>
