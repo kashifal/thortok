@@ -86,10 +86,10 @@
                       </label>
                     
                     </div>
-                  <div class="flex mt-3 items-center gap-2">
+                  <!-- <div class="flex mt-3 items-center gap-2">
                       <Warning />
                           <h1 class="text-sm text-[#C12920]">Special characters are not accepted</h1>
-                  </div>
+                  </div> -->
               </div>
            
   
@@ -108,10 +108,10 @@
                       </label>
                     
                     </div>
-                  <div class="flex mt-3 items-center gap-2">
+                  <!-- <div class="flex mt-3 items-center gap-2">
                       <Warning />
                           <h1 class="text-sm text-[#C12920]">Please enter a valid email address</h1>
-                  </div>
+                  </div> -->
               </div>
                 
           </div>
@@ -132,12 +132,12 @@
                   <Eye />                 
                 </div>
                 </div>
-              <div class="flex mt-3 items-center gap-2">
+              <!-- <div class="flex mt-3 items-center gap-2">
                   <Warning />
                       <h1 class="text-sm text-[#C12920]">Please enter a password with at least 8 characters</h1>
-              </div>
+              </div> -->
           </div>
-          <img src="../public/img/formCloudfare.png" alt="" class="w-full h-20 object-cover">
+          <img src="../public/img/formCloudfare.png" alt="" class="w-full h-14 object-fit">
           <button class="py-[14px] w-full text-center justify-center leading-none my-5 text-white px-8 rounded-[4px] text-[17px] font-[400] flex items-center gap-2 hover:shadow-[0px_4px_16px_0px_#DBF226] bg-black">
               GET STARTED
           </button>

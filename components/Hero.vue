@@ -28,7 +28,7 @@
           <!-- Dropdown Menu -->
           <div 
             v-if="isDropdownOpen"
-            class="absolute left-28 transform -translate-x-1/2 bg-white shadow-lg rounded-[6px] mt-2 w-full sm:w-[220px]">
+            class="absolute left-[0%] w-[50%] md:left-28 transform md:-translate-x-1/2 bg-white shadow-lg rounded-[6px] mt-2 sm:w-[220px]">
             <ul class="text-black">
               <li class="px-4 py-2 hover:bg-[#f1f1f1]">Collection 1</li>
               <li class="px-4 py-2 hover:bg-[#f1f1f1]">Collection 2</li>
