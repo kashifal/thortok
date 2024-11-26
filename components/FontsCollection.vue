@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="py-14 relative px-6">
+  <div class="py-14 relative pl-6 md:px-6">
     <div
       class=" 2xl:max-w-7xl w-full mx-auto gap-2 flex-wrap"
     >
@@ -16,7 +16,7 @@
           <button
             v-for="(button, index) in buttons"
             :key="index"
-            class="bg-[#F5F5F5] hover:bg-[#DBF226] border border-[#EEEEEE] text-[#444444] rounded-[4px] sm:py-[5px] py-1 px-[7px] sm:px-[10px] md:py-1.5 md:px-3 text-[11px ] sm:text-[12px] md:text-sm lg:text-[15px] font-[100]"
+            class="bg-[#F5F5F5] hover:bg-[#DBF226] border border-[#EEEEEE] text-[#444444] rounded-[4px] sm:py-[5px] py-1 px-[7px] sm:px-[10px] md:py-1.5 md:px-3 text-[11px ] sm:text-[12px] md:text-sm lg:text-[15px] font-light"
           >
             {{ button.label }}
           </button>
