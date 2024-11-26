@@ -60,12 +60,7 @@ const goPrev = () => {
 .custom-arrow {
   margin: 0 0.5rem;
   padding: 0.5rem 1rem;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-  cursor: pointer;
+
 }
 
 .custom-arrow:hover {
