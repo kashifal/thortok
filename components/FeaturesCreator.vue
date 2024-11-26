@@ -54,7 +54,7 @@
         type: 'loop',
         gap: '1rem',
         drag:false,
-        perPage: 6, // Default for screens above 1440px
+        perPage: 4, // Default for screens above 1440px
         pagination: false, // Disable default pagination
         perMove:1,
         arrows: false, // Disable default arrows

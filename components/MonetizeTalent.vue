@@ -18,7 +18,8 @@
 
             </marquee>
         </div>
-        <div class="bg-black grid text-white lg:grid-cols-2 gap-5  px-6 lg:px-[47px] py-[64px] 2xl:max-w-7xl mx-auto">
+        <div class="bg-black text-white">
+        <div class=" grid  lg:grid-cols-2 gap-5  px-6 lg:px-[47px] py-[64px] 2xl:max-w-7xl mx-auto">
             <div class="">
                 <h1 class="font-[700] text-[22px] sm:text-[26px] md:text-[30px] lg:text-[52px] ">
                     Monetize Your Talent with Thortok
@@ -73,6 +74,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </template>
 <script setup>

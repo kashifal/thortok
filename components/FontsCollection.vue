@@ -48,12 +48,18 @@
         type: 'loop',
         perMove:1,
         drag:false,
-        perPage: 6.5,
+        perPage: 9,
         pagination: false,
         arrows: false,
         gap: '0.5rem',
         breakpoints: {
-        
+          
+          1700: {
+            perPage: 7,
+          },
+          1300: {
+            perPage: 6,
+          },
           1024: {
             perPage: 5.5,
           },
