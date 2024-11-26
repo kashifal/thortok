@@ -86,7 +86,7 @@
           <div class=" md:grid grid-cols-2 max-w-4xl mx-auto  w-full  justify-center mt-3 gap-10">
         <div class="mt-6">
           <h1 class="font-[400] text-[18px] text-[#4C4C4C] text-center">Monthly Plan</h1>
-          <div class="flex items-center space-x-4 text-center">
+          <div class="flex items-center space-x-4 mx-auto justify-center mt-6 text-center">
             <span class="text-gray-700 text-lg font-medium">USD</span>
             <span class="text-4xl font-bold text-gray-800">2.99</span>
             <span class="text-gray-500 text-sm">/month</span>
@@ -95,14 +95,15 @@
             Get monthly
           </button>
         </div>
-         <div class="mt-6">
-          <div class="flex items-center space-x-4">
+        <div class="mt-6">
+          <h1 class="font-[400] text-[18px] text-[#4C4C4C] text-center">Yearly Plan</h1>
+          <div class="flex items-center space-x-4 mx-auto justify-center mt-6 text-center">
             <span class="text-gray-700 text-lg font-medium">USD</span>
             <span class="text-4xl font-bold text-gray-800">35.88</span>
-            <span class="text-gray-500 text-sm">/Yearly</span>
+            <span class="text-gray-500 text-sm">/year</span>
           </div>
-           <button class="bg-black rounded-[4px] hover:shadow-[0px_4px_16px_0px_#DBF226] mt-4 text-white py-2 px-4  font-medium hover:bg-opacity-90 w-full">
-            Get yearly
+           <button class="bg-black hover:shadow-[0px_4px_16px_0px_#DBF226] rounded-[4px] mt-4 text-white py-[16px] px-4  font-medium hover:bg-opacity-90 w-full">
+            Get Year
           </button>
         </div>
        
