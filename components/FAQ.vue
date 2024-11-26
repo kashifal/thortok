@@ -12,15 +12,15 @@
           :key="index"
           class="flex justify-between items-center cursor-pointer py-2.5 px-4 rounded-[6px] text-center text-[13px] sm:text-[18px] font-[400]"
           :class="{
-            'bg-[#EFF1D980]': !faq.isOpen, // Light background when not open
-            'bg-[#005B52]': faq.isOpen, // Dark background when open
-            'text-white': faq.isOpen // White text when open
+            'bg-[#EFF1D980]': selectedSidebarIndex !== index,
+            'bg-[#005B52]': selectedSidebarIndex === index,
+            'text-white': selectedSidebarIndex === index
           }"
-          @click="toggleAnswer(index)"
+          @click="selectSidebar(index)"
         >
-          <span>{{ faq.sidebarText }}</span> <!-- Sidebar text -->
+          <span>{{ faq.sidebarText }}</span>
           <span>
-            <RightArrow v-if="!faq.isOpen" />
+            <RightArrow v-if="selectedSidebarIndex !== index" />
             <DownArrow v-else />
           </span>
         </div>
@@ -33,31 +33,31 @@
           :key="index"
           class="cursor-pointer py-2.5 px-6 rounded-[6px] text-center text-[18px] font-[400]"
           :class="{
-            'bg-[#EFF1D980]': !faq.isOpen, // Light background when not open
-            'bg-[#005B52]': faq.isOpen, // Dark background when open
-            'text-white': faq.isOpen // White text when open
+            'bg-[#EFF1D980]': selectedSidebarIndex !== index,
+            'bg-[#005B52]': selectedSidebarIndex === index,
+            'text-white': selectedSidebarIndex === index
           }"
-          @click="toggleAnswer(index)"
+          @click="selectSidebar(index)"
         >
-          {{ faq.sidebarText }} <!-- Sidebar text -->
+          {{ faq.sidebarText }}
         </div>
       </div>
 
       <!-- FAQ Content (Desktop Version) -->
       <div class="md:col-span-10 md:-mt-7">
-        <div v-for="(faq, index) in faqs" class="border-b py-7 border-[#e4e4e4]" :key="index">
+        <div v-for="(faq, index) in faqs" :key="index" class="border-b py-7 border-[#e4e4e4]">
           <div
             class="flex items-center cursor-pointer justify-between gap-2"
             @click="toggleAnswer(index)"
           >
             <h1 class="font-[700] text-[17px] md:text-[20px] lg:text-[22px]" :class="{'text-[#005B52]': faq.isOpen}">
-              {{ faq.question }} <!-- FAQ Question -->
+              {{ faq.question }}
             </h1>
             <Plus v-if="!faq.isOpen" />
             <Minus v-else />
           </div>
           <p v-show="faq.isOpen" class="font-[300] md:text-[14px] md:text-[15px] lg:text-[17px] pt-3 w-[98%]">
-            {{ faq.answer }} <!-- FAQ Answer -->
+            {{ faq.answer }}
           </p>
         </div>
       </div>
@@ -72,48 +72,54 @@ import Plus from '../icons/Plus.vue';
 import RightArrow from '../icons/RightArrow.vue';
 import DownArrow from '../icons/DownArrow.vue';
 
-// Initialize FAQs with different sidebar text and corresponding FAQ questions
+// Sidebar selected index
+const selectedSidebarIndex = ref(0); // Default is the first sidebar item
+
+// Initialize FAQ data
 const faqs = ref([
   {
-    sidebarText: 'About Thortok',  // Sidebar text
-    question: 'What is Thortok and what services does it offer?',  // FAQ Question
-    answer: 'Thortok is a digital platform that provides tools for creators...', 
-    isOpen: true,
+    sidebarText: 'About Thortok',
+    question: 'What is Thortok and what services does it offer?',
+    answer: 'Thortok is a digital platform that provides tools for creators...',
+    isOpen: false,  // Initially closed
   },
   {
-    sidebarText: 'Monetization Programs',  // Sidebar text
-    question: 'How can creators earn from Thortok?',  // FAQ Question
-    answer: 'Thortok provides various monetization programs that help creators earn income...', 
+    sidebarText: 'Monetization Programs',
+    question: 'How can creators earn from Thortok?',
+    answer: 'Thortok provides various monetization programs that help creators earn income...',
     isOpen: false,
   },
   {
-    sidebarText: 'Participation and Content Creation',  // Sidebar text
-    question: 'Who can join Thortok and start creating content?',  // FAQ Question
-    answer: 'Anyone can join Thortok as a creator and start sharing their content...', 
+    sidebarText: 'Participation and Content Creation',
+    question: 'Who can join Thortok and start creating content?',
+    answer: 'Anyone can join Thortok as a creator and start sharing their content...',
     isOpen: false,
   },
   {
-    sidebarText: 'Account and Settings',  // Sidebar text
-    question: 'How do I manage my account and settings?',  // FAQ Question
-    answer: 'You can access and modify your account settings through the user dashboard...', 
+    sidebarText: 'Account and Settings',
+    question: 'How do I manage my account and settings?',
+    answer: 'You can access and modify your account settings through the user dashboard...',
     isOpen: false,
   },
   {
-    sidebarText: 'Support and Reporting',  // Sidebar text
-    question: 'How can I contact support for issues or reports?',  // FAQ Question
-    answer: 'For support, you can reach out through our help center or via email...', 
+    sidebarText: 'Support and Reporting',
+    question: 'How can I contact support for issues or reports?',
+    answer: 'For support, you can reach out through our help center or via email...',
     isOpen: false,
   },
 ]);
 
-// Toggle the visibility of the FAQ answer (used for expanding/collapsing)
-const toggleAnswer = (index) => {
+// Function to select the sidebar and show the respective FAQ
+const selectSidebar = (index) => {
+  selectedSidebarIndex.value = index; // Update the sidebar selection
   faqs.value.forEach((faq, i) => {
-    if (i !== index) {
-      faq.isOpen = false;
-    }
+    faq.isOpen = (i === index) ? !faq.isOpen : false;  // Open the selected FAQ, close the others
   });
-  faqs.value[index].isOpen = !faqs.value[index].isOpen;
+};
+
+// Toggle the visibility of the FAQ answer
+const toggleAnswer = (index) => {
+  faqs.value[index].isOpen = !faqs.value[index].isOpen;  // Toggle the selected FAQ
 };
 </script>
 
@@ -127,7 +133,7 @@ const toggleAnswer = (index) => {
 }
 
 .text-[#005B52] {
-  color: #005B52; /* Color for opened state */
+  color: #005B52;
 }
 
 .bg-transparent {
