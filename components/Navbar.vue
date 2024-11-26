@@ -87,25 +87,25 @@
         </div>
 
         <!-- Drawer Menu Items -->
-        <a href="#" class="py-1 w-fit border-b border-white lg:border-black">
+        <a href="#" class="py-1 text-sm w-fit border-b border-white lg:border-black">
           Graphics
         </a>
-        <a href="#" class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black">
+        <a href="#" class="py-1 text-sm border-b w-fit border-transparent hover:border-white lg:hover:border-black">
           Photos
         </a>
-        <a href="#" class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black">
+        <a href="#" class="py-1 text-sm border-b w-fit border-transparent hover:border-white lg:hover:border-black">
           Fonts
         </a>
-        <a href="#" class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black">
+        <a href="#" class="py-1 text-sm border-b w-fit border-transparent hover:border-white lg:hover:border-black">
           Videos
         </a>
-        <a href="#" class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black">
+        <a href="#" class="py-1 text-sm border-b w-fit border-transparent hover:border-white lg:hover:border-black">
           Audio
         </a>
-        <a href="#" class="py-1 border-b w-fit border-transparent hover:border-white lg:hover:border-black">
+        <a href="#" class="py-1 text-sm border-b w-fit border-transparent hover:border-white lg:hover:border-black">
           Sound Effects
         </a>
-        <a href="#" class="py-1 w-fit border-b border-transparent hover:border-white lg:hover:border-black">
+        <a href="#" class="py-1 text-sm w-fit border-b border-transparent hover:border-white lg:hover:border-black">
           3D Elements
         </a>
       </div>
@@ -115,7 +115,7 @@
         <div class="flex items-center gap-6">
           <div class="flex items-center gap-2 md:gap-5">
             <button
-              class="bg-[#EFF1D9] xl:flex hidden text-[13px] font-medium py-2 px-[14px] rounded-[4px] items-center gap-2"
+              class="bg-[#EFF1D9] lg:flex hidden text-[13px] font-medium py-2 px-[14px] rounded-[4px] items-center gap-2"
             >
               <AiTool />
               AI Tools

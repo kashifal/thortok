@@ -4,9 +4,9 @@
       <div class="flex items-center  justify-between gap-2 flex-wrap">
         <div class="flex items-center gap-2">
           <SeasonalCollection />
-          <p class="text-[17px] font-[700]">Discover Seasonal Collections</p>
+          <p class="sm:text-[17px] text-[15px] whitespace-nowrap font-[700]">Discover Seasonal Collections</p>
         </div>
-        <div class="gap-2 mt-16 w-full flex items-center justify-between   absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40   md:hidden">
+        <div class="gap-2 mt-[60px] sm:mt-16 w-full flex items-center justify-between   absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40   md:hidden">
           <div
             @click="goPrev"
             class="w-8 flex items-center justify-center h-8 rounded-full cursor-pointer bg-[#EFF1D9]"
@@ -52,7 +52,13 @@
               // 768: { // Mobile (max-width: 768px)
               //   perPage: 5, // Show 5 slide
               // },
-              630: { // Mobile (max-width: 630px)
+              767: { // Mobile (max-width: 630px)
+                perPage: 4, // Show 2 slide
+              },
+              424: { // Mobile (max-width: 630px)
+                perPage: 3, // Show 2 slide
+              },
+              319: { // Mobile (max-width: 630px)
                 perPage: 2, // Show 2 slide
               },
             }
