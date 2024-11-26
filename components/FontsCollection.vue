@@ -1,5 +1,5 @@
 <template lang="html">
-  <div class="py-14 relative pl-6 md:px-6">
+  <div class="pb-14 pt-6 relative pl-6 md:px-6">
     <div
       class=" 2xl:max-w-7xl w-full mx-auto gap-2 flex-wrap"
     >
@@ -47,6 +47,7 @@
       :options="{
         type: 'loop',
         perMove:1,
+        drag:false,
         perPage: 6.5,
         pagination: false,
         arrows: false,
@@ -132,6 +133,7 @@ const cards = [
 const splideOptions = {
   type: "loop",
   gap: "1rem",
+  drag:false,
   perPage: 7, // Show one slide per view
   pagination: false, // Disable default pagination
   arrows: false, // Disable default arrows (we'll use custom)

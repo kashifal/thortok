@@ -42,6 +42,8 @@
         :options="{
           type: 'loop',
           gap: '1rem',
+          drag:false,
+          snap: true,
           perMove:1,
           perPage: 5, // Show one slide per view
           pagination: false, // Disable default pagination
