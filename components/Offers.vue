@@ -129,7 +129,7 @@
                       <div class="  ">
                         <img
                           src="https://s3-alpha-sig.figma.com/img/807c/0eb6/d541b89bff8631a874638024a09c19f7?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZKCGJJnAYY27UHhmC7Qn53IYt9NLiQffQjmilEImFYLlXqfGfWHUa435gS9NaMGxR6MiCInQ0fpq81totZAW7h4VOKUA4ZS8f3z7ZprUvMfQ~umddcXsWGu6GhwX03~AKGyrrgno3aovaQVPoafD~t3~yJE1M2xLSQotB6tyLytxSWdZwBdTJUW1eSQn6Tt1vQqx~RvI4HV6uqE1dkcxOY2hm5dNEB7b63NepztVHOhpIcy5Sr5VPgIejElQc9HiAR10BQQllkaknuy-6Ix15ZH-2sRuZ-1xS2Kymkw0tem8Zjdqw1KPYJdw1gVwZQoQnqlVHQth3vaJrSOSQR8Ojw__"
-                          class="w-9 h-9 rounded-full object-cover"
+                          class="w-9 h-9 border border-[#DBF226] rounded-full object-cover"
                           alt=""
                         />
                       </div>
@@ -156,7 +156,7 @@
               <h1 class="my-5 text-xl font-bold">Sala Blue</h1>
               <div class="mt-4 flex flex-wrap items-center w-full gap-2 -mb-3">
                 <button
-                  class="hover:bg-black border-[#DBF226] border bg-[#DBF226] text-black hover:shadow-[0px_4px_16px_0px_#DBF226] hover:text-white px-3 sm:text-sm text-[11px] py-2 rounded-md flex gap-1 justify-center items-center"
+                  class="hover:bg-black border-[#DBF226] border bg-[#DBF226] text-black hover:shadow-[0px_4px_16px_0px_#DBF226] hover:text-white  sm:px-2 px-4 sm:text-sm text-[11px] py-2 rounded-md flex gap-1 justify-center items-center"
                 >
                   <span>
                     <Cart />
@@ -164,7 +164,7 @@
                   Add to cart
                 </button>
                 <button
-                  class="px-2 py-2 bg-white sm:text-sm text-[11px] font-semibold text-gray-800 flex gap-1 justify-center items-center border border-[#00000080] rounded-md"
+                  class="sm:px-2 px-3 py-2 bg-white sm:text-sm text-[11px] font-semibold text-gray-800 flex gap-1 justify-center items-center border border-[#00000080] rounded-md"
                 >
                   <span>
                     <WhisSave />
