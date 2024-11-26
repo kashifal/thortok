@@ -39,7 +39,7 @@
       <nav
         class="bg-white py-4 px-4 sm:px-6 flex items-center justify-between gap-4"
       >
-        <div class="flex lg:items-center gap-4 xl:gap-8">
+        <div class="flex lg:items-center gap-2 xl:gap-8">
           <div @click="toggleDrawer" class="lg:hidden block cursor-pointer">
             <HamBurger />
           </div>
@@ -49,7 +49,7 @@
               
           </a>
            <div
-                class="flex -translate-x-full lg:translate-x-0 lg:p-0 p-6 md:p-10 lg:font-[350] font-medium text-[2vw] lg:text-sm lg:text-black text-white lg:flex-row flex-col lg:relative fixed lg:h-auto h-screen lg:bg-transparent bg-black left-0 top-0 lg:w-auto w-[40%] gap-2 lg:gap-3">
+                class="flex -translate-x-full lg:translate-x-0 lg:p-0 p-6 md:p-10 lg:font-[350] font-medium text-[2vw] lg:text-sm lg:text-black text-white lg:flex-row flex-col lg:relative fixed lg:h-auto h-screen lg:bg-transparent bg-black left-0 top-0 lg:w-auto w-[40%] gap-2 lg:gap-3 xl:gap-3">
                 <div class="absolute lg:hidden block right-2 top-2 cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
                         <path fill="currentColor"
