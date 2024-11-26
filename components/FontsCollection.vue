@@ -1,7 +1,7 @@
 <template lang="html">
   <div class="py-14 relative px-6">
     <div
-      class="flex items-center 2xl:max-w-7xl w-full mx-auto justify-between gap-2 flex-wrap"
+      class=" 2xl:max-w-7xl w-full mx-auto gap-2 flex-wrap"
     >
       <div class="items-center gap-2">
         <h1 class="lg:text-[20px] sm:text-[17px] md:text-[18px] leading-[28px] sm:leading-[30px] md:leading-[32px] lg:leading-[36px] font-[700]">Fonts collection</h1>
@@ -9,6 +9,8 @@
           Find the perfect fonts to give your designs a unique and professional
           touch.
         </p>
+
+        <div class="flex items-end justify-between gap-2 w-full">
         <div class="flex flex-wrap mt-4 w-full gap-2">
           <!-- Loop through buttons array to render each button -->
           <button
@@ -19,9 +21,7 @@
             {{ button.label }}
           </button>
         </div>
-      </div>
-      
-      <div class="md:flex hidden items-center gap-2">
+        <div class="md:flex hidden items-center gap-2">
         <div
           @click="goPrev"
           class="bg-[#EFF1D9] cursor-pointer flex items-center justify-center size-[34px] rounded-full shadow-[0px_4px_16px_0px_#0000001A]"
@@ -35,6 +35,10 @@
           <CarouselRightArrow />
         </div>
       </div>
+    </div>
+      </div>
+      
+     
     </div>
     <div class="relative">
       <Splide

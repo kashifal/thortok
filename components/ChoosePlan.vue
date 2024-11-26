@@ -13,7 +13,7 @@
    
     <div class="grid 2xl:grid-cols-2 gap-8">
       
-      <div class="border rounded-lg md:flex 2xl:flex-col bg-white gap-8 py-8 px-6">
+      <div class="border  shadow-[0_10px_6px_0px_#0000001F] rounded-lg md:flex 2xl:flex-col bg-white gap-8 py-8 px-6">
         <div>
         <h2 class="text-xl font-bold text-gray-800">Free Plan</h2>
         <p class="text-gray-600 mt-2">
@@ -55,7 +55,7 @@
       </div>
 
       
-      <div class="border rounded-lg md:flex-col gap-8 bg-white  py-8 px-6">
+      <div class="border shadow-[0_10px_6px_0px_#0000001F] mb-10 rounded-lg md:flex-col gap-8 bg-white  py-8 px-6">
         <div class="md:flex gap-8 ">
           <div class="md:w-1/2">
         <h2 class="text-xl font-bold text-gray-800">Pro Plan</h2>
@@ -83,14 +83,15 @@
         </ul>
         </div>
         <div class="">
-          <div class=" md:flex w-full justify-center mt-3 gap-10">
+          <div class=" md:grid grid-cols-2 max-w-4xl mx-auto  w-full  justify-center mt-3 gap-10">
         <div class="mt-6">
-          <div class="flex items-center space-x-4">
+          <h1 class="font-[400] text-[18px] text-[#4C4C4C] text-center">Monthly Plan</h1>
+          <div class="flex items-center space-x-4 text-center">
             <span class="text-gray-700 text-lg font-medium">USD</span>
             <span class="text-4xl font-bold text-gray-800">2.99</span>
             <span class="text-gray-500 text-sm">/month</span>
           </div>
-           <button class="bg-black hover:shadow-[0px_4px_16px_0px_#DBF226] rounded-[4px] mt-4 text-white py-2 px-4  font-medium hover:bg-opacity-90 w-full">
+           <button class="bg-black hover:shadow-[0px_4px_16px_0px_#DBF226] rounded-[4px] mt-4 text-white py-[16px] px-4  font-medium hover:bg-opacity-90 w-full">
             Get monthly
           </button>
         </div>
