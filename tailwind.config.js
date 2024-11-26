@@ -2,7 +2,14 @@
 export default {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+     
+        screens: {
+          smm: '767px', // Define the custom breakpoint
+          esm: '424px', // Define the custom breakpoint
+         
+      },
+    },
   },
   plugins: [],
 }

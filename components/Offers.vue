@@ -2,9 +2,9 @@
   <div class="mt-8">
     <div class="sm:p-6">
       <section
-        class="2xl:max-w-7xl relative py-5 px-6 sm:rounded-xl bg-[#EFF1D9] mx-auto"
+        class="2xl:max-w-7xl relative py-5 pl-6 smm:px-6 sm:rounded-xl bg-[#EFF1D9] mx-auto"
       >
-        <h2 class="text-xl sm:text-2xl font-bold text-gray-800 mb-3">
+        <h2 class="text-base sm:text-2xl font-bold text-gray-800 mb-3">
           Discover our current offers
         </h2>
         <p class="text-gray-600 leading-relaxed font-light mb-6">
@@ -15,39 +15,39 @@
         <div class="flex justify-between">
           <div class="flex flex-wrap gap-2 mb-8">
             <button
-              class="px-4 rounded-[4px] border py-2 border-white bg-[#000000] text-white"
+              class="px-4 rounded-[4px] font-light border py-2 border-white bg-[#000000] text-white"
             >
               All
             </button>
             <button
-              class="px-4 rounded-[4px] py-2 border border-white bg-[#000000] text-white"
+              class="px-4 rounded-[4px] font-light py-2 border border-white bg-[#000000] text-white"
             >
               Special offer
             </button>
             <button
-              class="px-4 rounded-[4px] border-white py-2 border bg-[#000000] text-white"
+              class="px-4 rounded-[4px] font-light border-white py-2 border bg-[#000000] text-white"
             >
               Mockups
             </button>
             <button
-              class="px-4 py-2 rounded-[4px] border border-[#005B52] bg-white text-black hover:text-white hover:bg-[#000000] duration-300"
+              class="px-4 py-2 rounded-[4px] font-light border border-[#005B52] bg-white text-black hover:text-white hover:bg-[#000000] duration-300"
             >
               Stationery
             </button>
             <button
-              class="px-4 rounded-[4px] border-white py-2 border bg-[#000000] text-white"
+              class="px-4 rounded-[4px] font-light border-white py-2 border bg-[#000000] text-white"
             >
               Presets
             </button>
             <button
-              class="px-4 rounded-[4px] border-white py-2 border bg-[#000000] text-white"
+              class="px-4 rounded-[4px] font-light border-white py-2 border bg-[#000000] text-white"
             >
               Themes
             </button>
           </div>
 
           <div
-            class="gap-2 mt-32 w-full flex items-center justify-between absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40 md:hidden"
+            class="gap-2 mt-[116px] sm:mt-24 w-full flex items-center justify-between absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40 smm:hidden"
           >
             <div
               @click="goPrev"
@@ -62,7 +62,7 @@
               <CarouselRightArrow />
             </div>
           </div>
-          <div class="gap-2 mt-2 hidden md:flex">
+          <div class="gap-2 mt-2 hidden smm:flex">
             <div
               @click="goPrev"
               class="w-[34px] h-[34px] flex items-center justify-center rounded-full cursor-pointer bg-white"
@@ -94,17 +94,21 @@
               },
               1024: {
                 // Tablet (max-width: 1024px)
-                perPage: 2, // Show 2 slides
+                perPage: 2.6, // Show 2 slides
               },
               // 768: { // Mobile (max-width: 768px)
               //   perPage: 2, // Show 1 slide
               // },
               767: {
                 // Mobile (max-width: 530px)
-                perPage: 2, // Show 1 slide
+                perPage: 2.2, // Show 1 slide
               },550: {
                 // Mobile (max-width: 530px)
                 perPage: 1.3, // Show 1 slide
+              },
+              350: {
+                // Mobile (max-width: 530px)
+                perPage: 1, // Show 1 slide
               },
             },
           }"
@@ -154,9 +158,9 @@
                 </div>
               </div>
               <h1 class="my-5 text-xl font-bold">Sala Blue</h1>
-              <div class="mt-4 flex flex-wrap items-center w-full gap-2 -mb-3">
+              <div class="mt-4 flex flex-nowrap items-center w-full gap-2 -mb-3">
                 <button
-                  class="hover:bg-black border-[#DBF226] border bg-[#DBF226] text-black hover:shadow-[0px_4px_16px_0px_#DBF226] hover:text-white  sm:px-2 px-4 sm:text-sm text-[11px] py-2 rounded-md flex gap-1 justify-center items-center"
+                  class="hover:bg-black whitespace-nowrap border-[#DBF226] border bg-[#DBF226] text-black hover:shadow-[0px_4px_16px_0px_#DBF226] hover:text-white  sm:px-2 px-4 sm:text-sm text-[11px] py-2 rounded-md flex gap-1 justify-center items-center"
                 >
                   <span>
                     <Cart />
@@ -220,7 +224,7 @@
               </div>
             </div>
             <h1 class="my-5 text-xl font-bold">Sala Blue</h1>
-            <div class="mt-4 flex flex-wrap items-center w-full gap-2 -mb-3">
+            <div class="mt-4 flex flex-nowrap items-center w-full gap-2 -mb-3">
               <button
                 class="hover:bg-black border-[#DBF226] border bg-[#DBF226] text-black hover:shadow-[0px_4px_16px_0px_#DBF226] hover:text-white  sm:px-2 px-4 sm:text-sm text-[11px] py-2 rounded-md flex gap-1 justify-center items-center"
               >
