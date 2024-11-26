@@ -46,6 +46,7 @@
       ref="splideRef"
       :options="{
         type: 'loop',
+        perMove:1,
         perPage: 6.5,
         pagination: false,
         arrows: false,

@@ -42,6 +42,7 @@
         :options="{
           type: 'loop',
           gap: '1rem',
+          perMove:1,
           perPage: 5, // Show one slide per view
           pagination: false, // Disable default pagination
           arrows: false, // Disable default arrows (we'll use custom)
@@ -95,6 +96,9 @@ const cards = ref([
   { image: '/img/img1.png', date: 'January 1' },
   { image: '/img/img2.png', date: 'January 7' },
   { image: '/img/img3.png', date: 'January 5' },
+  { image: '/img/img4.png', date: 'January 13' },
+  { image: '/img/img4.png', date: 'January 13' },
+  { image: '/img/img4.png', date: 'January 13' },
   { image: '/img/img4.png', date: 'January 13' },
   { image: '/img/hero_image.png', date: 'January 15' }
 ]);
