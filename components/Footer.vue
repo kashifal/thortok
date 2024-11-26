@@ -24,7 +24,7 @@
        
 <div class=" text-white border-b border-[#4b4b4b] font-sans">
     <div class="grid lg:grid-cols-2 gap-6  ">
-      <div class="   p-8 ">
+      <div class="    ">
         <h1 class="text-3xl font-bold text-white mb-4">
           Unlock a World of Creative Resources!
         </h1>
@@ -43,7 +43,7 @@
   </span>
         </a>
       </div>
-       <div class="px-4">
+       <div class="sm:px-4">
       <form class="bg-white text-black  mx-auto lg:max-w-[724px] p-4 md:p-10 rounded-t-[10px]">
           <p class="text-sm font-[350]">START WITH THE FREE PLAN</p>
           <div class="flex sm:flex-row flex-col sm:items-center mt-2 justify-between flex-wrap gap-2">
@@ -158,7 +158,7 @@
   
   
     <div class="text-gray-400">
-      <div class="max-w-7xl mx-auto px-6 py-10">
+      <div class="max-w-7xl mx-auto px-2 sm:px-6 py-10">
         <div class="md:grid grid-cols-2 gap-10 md:justify-between">
           
           <div class="mb-8 md:mb-0">
