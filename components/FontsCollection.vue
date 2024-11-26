@@ -47,6 +47,7 @@
       :options="{
         type: 'loop',
         perMove:1,
+        drag:false,
         perPage: 6.5,
         pagination: false,
         arrows: false,
@@ -132,6 +133,7 @@ const cards = [
 const splideOptions = {
   type: "loop",
   gap: "1rem",
+  drag:false,
   perPage: 7, // Show one slide per view
   pagination: false, // Disable default pagination
   arrows: false, // Disable default arrows (we'll use custom)

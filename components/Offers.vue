@@ -83,8 +83,14 @@
           ref="splideRef"
           :options="{
             type: 'loop',
+            drag:false,
             gap: '1rem',
+            dragMinThreshold: {
+              mouse: 10, // Minimum drag distance for mouse
+              touch: 20, // Minimum drag distance for touch
+            },
             perMove: 1,
+            snap:true,
             perPage: 4, // Show one slide per view
             pagination: false, // Disable default pagination
             arrows: false, // Disable default arrows (we'll use custom)
@@ -96,9 +102,13 @@
               1024: {
                 // Tablet (max-width: 1024px)
                 perPage: 2.6, // Show 2 slides
+            perMove: 1,
+
               },
               // 768: { // Mobile (max-width: 768px)
               //   perPage: 2, // Show 1 slide
+            perMove: 1,
+
               // },
               767: {
                 // Mobile (max-width: 530px)
@@ -106,10 +116,14 @@
               },550: {
                 // Mobile (max-width: 530px)
                 perPage: 1.3, // Show 1 slide
+            perMove: 1,
+
               },
               350: {
                 // Mobile (max-width: 530px)
-                perPage: 1, // Show 1 slide
+                perPage: 1, // Show 1 slide,,
+            perMove: 1,
+
               },
             },
           }"
