@@ -1,77 +1,158 @@
-<script setup>
-import { Splide, SplideSlide } from '@splidejs/vue-splide';
-import '@splidejs/splide/dist/css/splide.min.css';
-import { ref } from 'vue';
-
-const splideRef = ref(null); // Reference to Splide instance
-
-// Array of slides
-const slides = [
-  { image: 'https://via.placeholder.com/800x400?text=Slide+1' },
-  { image: 'https://via.placeholder.com/800x400?text=Slide+3' },
-  { image: 'https://via.placeholder.com/800x400?text=Slide+3' },
-];
-
-// Custom arrow navigation methods
-const goNext = () => {
-  const splideInstance = splideRef.value?.splide;
-  if (splideInstance) splideInstance.go('>'); // Move to next slide
-};
-
-const goPrev = () => {
-  const splideInstance = splideRef.value?.splide;
-  if (splideInstance) splideInstance.go('<'); // Move to previous slide
-};
-</script>
-
 <template>
-  <div>
-    <!-- Custom Navigation Arrows -->
-    <div class="custom-arrows">
-      <button @click="goPrev" class="custom-arrow prev">⬅ Prev</button>
-      <button @click="goNext" class="custom-arrow next">Next ➡</button>
-    </div>
+  <div class="flex flex-col md:flex-row gap-6 p-6">
+    <!-- Sidebar Navigation -->
+    <aside class="flex flex-col space-y-2">
+      <button
+        v-for="(tab, index) in tabs"
+        :key="index"
+        :class="[
+          'px-4 py-2 rounded-lg text-left font-medium',
+          activeTab === index ? 'bg-green-100 text-green-800' : 'bg-gray-100 text-gray-700'
+        ]"
+        @click="changeTab(index)"
+      >
+        {{ tab.title }}
+      </button>
+    </aside>
 
-    <!-- Splide Carousel -->
-    <Splide
-      ref="splideRef"
-      :options="{
-        type: 'loop',
-        perPage: 1,    
-        drag:false,    // Show one slide per view
-        pagination: false, // Disable default pagination
-        arrows: false      // Disable default arrows (we'll use custom)
-      }"
-    >
-      <SplideSlide v-for="(slide, index) in slides" :key="index">
-        <img :src="slide.image" :alt="`Slide ${index + 1}`" />
-      </SplideSlide>
-    </Splide>
+    <!-- Main Content -->
+    <section class="flex-1">
+      <h2 class="text-2xl font-bold text-green-800 mb-4">
+        {{ tabs[activeTab].title }}
+      </h2>
+      <p class="text-gray-600 mb-6">
+        {{ tabs[activeTab].description }}
+      </p>
+
+      <!-- Questions -->
+      <div v-for="(question, index) in tabs[activeTab].questions" :key="index" class="border-b py-3">
+        <button
+          class="w-full flex justify-between items-center text-left font-medium text-lg text-gray-800"
+          @click="toggleQuestion(index)"
+        >
+          {{ question.text }}
+          <span
+            class="transition-transform"
+            :class="question.open ? 'rotate-180' : 'rotate-0'"
+          >
+            +
+          </span>
+        </button>
+        <div v-if="question.open" class="mt-2 text-gray-600">
+          {{ question.answer }}
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
-<style>
-/* Custom Arrows Styling */
-.custom-arrows {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
+<script setup>
+import { reactive } from 'vue';
+
+// Data for tabs and their respective questions
+const tabs = reactive([
+  {
+    title: "About Thortok",
+    description: "Learn about Thortok's mission and services.",
+    questions: [
+      {
+        text: "What is Thortok and what services does it offer?",
+        answer: "Thortok provides tools to help creators monetize their content.",
+        open: false,
+      },
+      {
+        text: "How can creators earn from Thortok?",
+        answer: "Creators can earn through monetization programs and partnerships.",
+        open: false,
+      },
+    ],
+  },
+  {
+    title: "Monetization Programs",
+    description: "Details about the various monetization programs for creators.",
+    questions: [
+      {
+        text: "How do monetization programs work?",
+        answer: "Programs are based on ad revenue, subscriptions, and more.",
+        open: false,
+      },
+      {
+        text: "What are the eligibility criteria for monetization?",
+        answer: "Creators must meet specific engagement metrics to qualify.",
+        open: false,
+      },
+    ],
+  },
+  {
+    title: "Participation and Content Creation",
+    description: "Guidelines for participating and creating content.",
+    questions: [
+      {
+        text: "Who can join Thortok and start creating content?",
+        answer: "Anyone meeting the platform's requirements can join.",
+        open: false,
+      },
+      {
+        text: "Are there any restrictions on the type of content?",
+        answer: "Content must follow the community guidelines.",
+        open: false,
+      },
+    ],
+  },
+  {
+    title: "Account and Settings",
+    description: "Manage your account and customize settings.",
+    questions: [
+      {
+        text: "How do I manage my account and settings?",
+        answer: "Go to the settings page to update your account details.",
+        open: false,
+      },
+      {
+        text: "Can I change my account email?",
+        answer: "Yes, you can update your email in the account settings.",
+        open: false,
+      },
+    ],
+  },
+  {
+    title: "Support and Reporting",
+    description: "Reach out for support or report issues.",
+    questions: [
+      {
+        text: "How can I contact support for issues or reports?",
+        answer: "You can reach out through the support page or email.",
+        open: false,
+      },
+      {
+        text: "How do I report inappropriate content?",
+        answer: "Use the report button available on each content page.",
+        open: false,
+      },
+    ],
+  },
+]);
+
+// State for the active tab
+let activeTab = 0;
+
+// Function to toggle a question's visibility
+function toggleQuestion(index) {
+  tabs[activeTab].questions[index].open = !tabs[activeTab].questions[index].open;
 }
 
-.custom-arrow {
-  margin: 0 0.5rem;
-  padding: 0.5rem 1rem;
+// Function to change the active tab and reset questions
+function changeTab(index) {
+  // Close all questions in the current tab
+  tabs[activeTab].questions.forEach((question) => {
+    question.open = false;
+  });
 
+  // Switch to the new tab
+  activeTab = index;
 }
+</script>
 
-.custom-arrow:hover {
-  background-color: #0056b3;
-}
-
-/* Carousel Styling */
-img {
-  width: 100%;
-  height: auto;
-  
-}
+<style scoped>
+/* Add any additional styling as needed */
 </style>

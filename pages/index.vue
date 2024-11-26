@@ -12,6 +12,7 @@
     <FreelanceService />
     <FAQ />
     <Footer />
+    <!-- <Test /> -->
   </div>
 </template>
 
