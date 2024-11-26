@@ -39,11 +39,11 @@
       <nav
         class="bg-white py-4 px-4 sm:px-6 flex items-center justify-between gap-4"
       >
-        <div class="flex lg:items-center gap-8">
+        <div class="flex lg:items-center gap-4 xl:gap-8">
           <div @click="toggleDrawer" class="lg:hidden block cursor-pointer">
             <HamBurger />
           </div>
-          <a href="#" class="-ml-4 lg:ml-0">
+          <a href="#" class=" lg:ml-0">
             <!-- <img src="./logo.png" alt="" /> -->
             <NavLogo />
               
