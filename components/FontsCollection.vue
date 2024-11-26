@@ -4,7 +4,7 @@
       class="flex items-center 2xl:max-w-7xl w-full mx-auto justify-between gap-2 flex-wrap"
     >
       <div class="items-center gap-2">
-        <p class="lg:text-[20px] sm:text-[17px] md:text-[18px] leading-[28px] sm:leading-[30px] md:leading-[32px] lg:leading-[36px] font-[700]">Fonts collection</p>
+        <h1 class="lg:text-[20px] sm:text-[17px] md:text-[18px] leading-[28px] sm:leading-[30px] md:leading-[32px] lg:leading-[36px] font-[700]">Fonts collection</h1>
         <p class="lg:text-[17px] text-[13px] sm:text-sm md:text-[15px] leading-[23px] sm:leading-6 md:leading-[27px] lg:leading-[30px] font-[300] pt-3">
           Find the perfect fonts to give your designs a unique and professional
           touch.
@@ -14,7 +14,7 @@
           <button
             v-for="(button, index) in buttons"
             :key="index"
-            class="bg-[#F5F5F5] hover:bg-[#DBF226] border border-[#EEEEEE] text-[#444444] rounded-[4px] sm:py-[5px] py-1 px-[7px] sm:px-[10px] md:py-1.5 md:px-3 text-[11px ] sm:text-[12px] md:text-sm lg:text-[15px] font-medium"
+            class="bg-[#F5F5F5] hover:bg-[#DBF226] border border-[#EEEEEE] text-[#444444] rounded-[4px] sm:py-[5px] py-1 px-[7px] sm:px-[10px] md:py-1.5 md:px-3 text-[11px ] sm:text-[12px] md:text-sm lg:text-[15px] font-[100]"
           >
             {{ button.label }}
           </button>
