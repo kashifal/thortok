@@ -46,6 +46,7 @@
         type: 'loop',
         gap: '1rem',
         perMove:1,
+        drag:false,
         perPage: 2, // Show one slide per view
         pagination: false, // Disable default pagination
         arrows: false, // Disable default arrows (we'll use custom)

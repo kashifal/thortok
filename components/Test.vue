@@ -37,7 +37,8 @@ const goPrev = () => {
       ref="splideRef"
       :options="{
         type: 'loop',
-        perPage: 1,        // Show one slide per view
+        perPage: 1,    
+        drag:false,    // Show one slide per view
         pagination: false, // Disable default pagination
         arrows: false      // Disable default arrows (we'll use custom)
       }"
