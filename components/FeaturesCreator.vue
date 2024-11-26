@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="bg-[#EFF1D9] my-20 relative sm:px-6 py-20 px-4">
+  <div class="bg-[#EFF1D9] my-20 relative smm:px-6 py-20 pl-6">
     <section class="max-w-7xl mx-auto">
       <div class="underline sm:underline-offset-[16px] underline-offset-4">
        
@@ -12,7 +12,7 @@
           <span class="p-2 bg-[#DBF226] rounded-full"> <Featured /> </span
           ><span class="border-b border-black">Featured Creators of the Week</span>
         </h2>
-        <p class="lg:text-[17px] text-[13px] sm:text-sm md:text-[15px] leading-[23px] sm:leading-6 md:leading-[27px] lg:leading-[30px] font-[300] pt-3">
+        <p class="lg:text-[17px] pl-14 text-[13px] sm:text-sm md:text-[15px] leading-[23px] sm:leading-6 md:leading-[27px] lg:leading-[30px] font-[300] pt-3">
           Discover the unique talents and inspiring creations of this week’s standout contributors.
         </p>
         </div>
@@ -31,7 +31,7 @@
           </div>
         </div>
 
-        <div class="gap-2 -mt-1 hidden sm:flex">
+        <div class="gap-2 -mt-1 hidden smm:flex">
           <div
             @click="goPrev"
              class="bg-[#FFFFFF] cursor-pointer flex items-center justify-center size-[34px] rounded-full shadow-[0px_4px_16px_0px_#0000001A]"
@@ -70,7 +70,7 @@
             perPage: 1.5,
           },
           424: { // Screens under 424px
-            perPage: 1,
+            perPage: 1.2,
           },
         },
       }"
