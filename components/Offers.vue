@@ -84,6 +84,7 @@
           :options="{
             type: 'loop',
             gap: '1rem',
+            perMove: 1,
             perPage: 4, // Show one slide per view
             pagination: false, // Disable default pagination
             arrows: false, // Disable default arrows (we'll use custom)
@@ -114,6 +115,8 @@
           }"
         >
           <SplideSlide
+          v-for="(item, index) in offers"
+          :key="index"
             class="bg-white py-4 px-4 mb-4 shadow-xl rounded-lg overflow-hidden"
           >
           <div class="w-full h-44 overflow-hidden  ">
@@ -179,71 +182,7 @@
             </div>
           </SplideSlide>
 
-          <SplideSlide
-          class="bg-white py-4 px-4 mb-4 shadow-xl rounded-lg overflow-hidden"
-        >
-        <div class="w-full h-44 overflow-hidden  ">
-          <img
-            src="https://labeldesignservices.com/wp-content/uploads/elementor/thumbs/Branding-01-qs5q87mva9k19c4ygojm40xp9a0hxwgobfg12usdto.jpg"
-            alt="Product Image"
-            class="w-full rounded-tl-md rounded-tr-md h-44 object-cover"
-          />
-          </div>
-          <div class="p-4">
-            <div class="flex justify-between">
-              <h3
-                class="font-semibold items-center flex gap-3 text-sm text-gray-800"
-              >
-                <span class="flex"
-                  ><div class="relative">
-                    <div class="  ">
-                      <img
-                        src="https://s3-alpha-sig.figma.com/img/807c/0eb6/d541b89bff8631a874638024a09c19f7?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZKCGJJnAYY27UHhmC7Qn53IYt9NLiQffQjmilEImFYLlXqfGfWHUa435gS9NaMGxR6MiCInQ0fpq81totZAW7h4VOKUA4ZS8f3z7ZprUvMfQ~umddcXsWGu6GhwX03~AKGyrrgno3aovaQVPoafD~t3~yJE1M2xLSQotB6tyLytxSWdZwBdTJUW1eSQn6Tt1vQqx~RvI4HV6uqE1dkcxOY2hm5dNEB7b63NepztVHOhpIcy5Sr5VPgIejElQc9HiAR10BQQllkaknuy-6Ix15ZH-2sRuZ-1xS2Kymkw0tem8Zjdqw1KPYJdw1gVwZQoQnqlVHQth3vaJrSOSQR8Ojw__"
-                        class="w-9 h-9 border border-[#DBF226] rounded-full object-cover"
-                        alt=""
-                      />
-                    </div>
-                    <span
-                      ><h2
-                        class="text-[5px] absolute p-1 text-center   border-2 border-white -top-2 left-6 size-5 flex items-center justify-center bg-[#DBF226] font-normal rounded-full"
-                      >
-                        Pro
-                      </h2></span
-                    >
-                    <span
-                      ><h1
-                        class="absolute p-1 bg-[#78BF39] border border-white top-6 left-7 rounded-full"
-                      ></h1
-                    ></span></div
-                ></span>
-                <span class="font-light">Ch. Ratana</span>
-              </h3>
-              <div class="flex items-center mb-2 gap-2">
-                <p class="text-black text-[13px] line-through">$30</p>
-                <p class="text-black text-2xl font-bold">$25</p>
-              </div>
-            </div>
-            <h1 class="my-5 text-xl font-bold">Sala Blue</h1>
-            <div class="mt-4 flex flex-nowrap items-center w-full gap-2 -mb-3">
-              <button
-                class="hover:bg-black border-[#DBF226] border bg-[#DBF226] text-black hover:shadow-[0px_4px_16px_0px_#DBF226] hover:text-white  sm:px-2 px-4 sm:text-sm text-[11px] py-2 rounded-md flex gap-1 justify-center items-center"
-              >
-                <span>
-                  <Cart />
-                </span>
-                Add to cart
-              </button>
-              <button
-                class="sm:px-2 px-3 py-2 bg-white sm:text-sm text-[11px] font-semibold text-gray-800 flex gap-1 justify-center items-center border border-[#00000080] rounded-md"
-              >
-                <span>
-                  <WhisSave />
-                </span>
-                <span class="font-light">Wishlist</span>
-              </button>
-            </div>
-          </div>
-        </SplideSlide>
+        
 
            
         </Splide>
@@ -273,6 +212,59 @@ const goPrev = () => {
   const splideInstance = splideRef.value?.splide;
   splideInstance.go("<"); // Move to previous slide
 };
+
+
+const offers = [
+  {
+    name:'Kashif',
+    prod:"Indus app",
+    price:10,
+    profile:'',
+    disImg:''
+  }, {
+    name:'Kashif',
+    prod:"Indus app",
+    price:10,
+    profile:'',
+    disImg:''
+  }, {
+    name:'Kashif',
+    prod:"Indus app",
+    price:10,
+    profile:'',
+    disImg:''
+  }, {
+    name:'Kashif',
+    prod:"Indus app",
+    price:10,
+    profile:'',
+    disImg:''
+  }, {
+    name:'Kashif',
+    prod:"Indus app",
+    price:10,
+    profile:'',
+    disImg:''
+  }, {
+    name:'Kashif',
+    prod:"Indus app",
+    price:10,
+    profile:'',
+    disImg:''
+  }, {
+    name:'Kashif',
+    prod:"Indus app",
+    price:10,
+    profile:'',
+    disImg:''
+  }, {
+    name:'Kashif',
+    prod:"Indus app",
+    price:10,
+    profile:'',
+    disImg:''
+  }
+];
 </script>
 
 <style scoped></style>
