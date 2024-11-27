@@ -51,22 +51,7 @@ import { reactive } from 'vue';
 
 // Data for tabs and their respective questions
 const tabs = reactive([
-  {
-    title: "About Thortok",
-    description: "Learn about Thortok's mission and services.",
-    questions: [
-      {
-        text: "What is Thortok and what services does it offer?",
-        answer: "Thortok provides tools to help creators monetize their content.",
-        open: false,
-      },
-      {
-        text: "How can creators earn from Thortok?",
-        answer: "Creators can earn through monetization programs and partnerships.",
-        open: false,
-      },
-    ],
-  },
+   
   {
     title: "Monetization Programs",
     description: "Details about the various monetization programs for creators.",
