@@ -10,3 +10,11 @@
 .heading{
     font-family: "Lexend", sans-serif;
 }
+/* .shadow-\[2px_-2px_10px_4px_\#00000033\] {
+    box-shadow: none !important;
+} */
+
+.splide__slide{
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+}
