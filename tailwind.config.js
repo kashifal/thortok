@@ -7,7 +7,7 @@ export default {
         screens: {
           smm: '767px', // Define the custom breakpoint
           esm: '424px', // Define the custom breakpoint
-         
+          lgBig: '1024px',
       },
     },
   },

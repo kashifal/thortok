@@ -49,7 +49,7 @@
             </button>
           </div>
         </div>
-        <div class="flex gap-1  lg:hidden flex-wrap lg:flex-row flex-col text-white lg:items-center text-sm font-[350]">
+        <div class="flex gap-1  lgBig:hidden flex-wrap lg:flex-row flex-col text-white lg:items-center text-sm font-[350]">
           <p class="leading-loose">
             Unleash your creativity with thousands of high-quality
             <button class="bg-[#FFFFFF33] h-fit inline md:mt-0 mt-2 md:mr-0 px-2.5 rounded-[5px]">design assets,</button>
@@ -57,18 +57,18 @@
           </p>
           <div class="flex flex-wrap items-center gap-1">
             <p class="inline leading-loose">Whether you’re a creator or a designer, find everything you need to bring</p>
-            <button class="bg-[#FFFFFF33] h-fit w-fit inline py-1 px-2.5 rounded-[5px]">your ideas to life.</button>
+            <span class="bg-[#FFFFFF33] h-fit w-fit inline py-1 px-2.5 rounded-[5px]">your ideas to life.</span>
           </div>
         </div>
-        <div class="lg:flex hidden leading-snug gap-1 flex-wrap 2xl:flex-nowrap lg:flex-row flex-col text-white lg:items-center text-sm font-[350]">
+        <div class="lgBig:flex hidden leading-snug gap-1 whitespace-nowrap 2xl:flex-nowrap lg:flex-row flex-col text-white lg:items-center 2xl:text-sm text-[1.03vw] font-[350]">
           <p class="">
             Unleash your creativity with thousands of high-quality
-            <button class="bg-[#FFFFFF33] inline py-1 px-1.5 rounded-[5px]">design assets,</button>
+            <span class="bg-[#FFFFFF33] inline-flex py-1 px-1.5 rounded-[5px]">design assets,</span>
             <span class="inline ml-1">audio, photos, Videos and templates.</span>
             <span class="inline">Whether you’re a creator or a designer, find everything you need to bring</span>
           </p>
           <div class="flex flex-wrap items-center gap-1">
-            <button class="bg-[#FFFFFF33] whitespace-nowrap w-fit inline py-1 px-1.5 rounded-[5px]">your ideas to life.</button>
+            <span class="bg-[#FFFFFF33] whitespace-nowrap w-fit inline py-1 px-1.5 rounded-[5px]">your ideas to life.</span>
           </div>
         </div>
       </div>
