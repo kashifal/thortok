@@ -20,13 +20,13 @@
     </div>
   <footer class="bg-[#0D0D0D] ">
 
-    <div class="2xl:max-w-7xl 2xl:px-0 pt-16  px-4 md:px-6 mx-auto">
+    <div class="2xl:max-w-7xl 2xl:px-0 pt-16  pl-4 px-4 2xl:px-0 2xl:pl-4 md:px-6 mx-auto">
        
 <div class=" text-white border-b border-[#4b4b4b] font-sans">
-    <div class="grid lg:grid-cols-2 gap-6  ">
-      <div class="  h-full flex  flex-col justify-center  ">
+    <div class="grid lg:grid-cols-12 gap-6  ">
+      <div class="lg:col-span-5  h-full flex  flex-col justify-center  ">
         <h1 class="text-3xl 2xl:text-5xl font-bold text-white mb-4">
-          Unlock a World of Creative Resources!
+          Unlock a World of<br /> Creative Resources!
         </h1>
         <p class="text-gray-300 mb-6">
           Sign up for free today and start exploring exclusive digital assets tailored for creators like you.
@@ -43,7 +43,7 @@
   </span>
         </a>
       </div>
-       <div class="sm:px-4">
+       <div class="sm:px-4 lg:col-span-7">
       <form class="bg-white text-black  mx-auto w-full 2xl:w-full p-4 md:p-7 xl:p-10 rounded-t-[10px]">
           <p class="text-sm font-[350]">START WITH THE FREE PLAN</p>
           <div class="flex sm:flex-row flex-col sm:items-center xl:flex-nowrap flex-wrap md:flex-nowrap lg:flex-wrap mt-2 justify-between  gap-2">
@@ -191,10 +191,10 @@
           </div>
   
           
-          <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-2  gap-x-3 gap-y-10 xl:grid-cols-4">
+          <div class="grid grid-cols-2 text-white text-sm sm:grid-cols-4 md:grid-cols-2  gap-x-3 gap-y-10 xl:grid-cols-4">
             <div>
               <h3 class="text-white font-bold mb-4">Information</h3>
-              <ul class="space-y-2">
+              <ul class="space-y-2 ">
                 <li><a href="#" class="hover:underline underline-offset-4 hover:text-gray-200">About Us</a></li>
                 <li><a href="#" class="hover:underline underline-offset-4 hover:text-gray-200">Our Products</a></li>
                 <li><a href="#" class="hover:underline underline-offset-4 hover:text-gray-200">Our Pricing & Plans</a></li>

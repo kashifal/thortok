@@ -6,7 +6,7 @@
       </h1>
       <div class="mt-14 lg:grid gap-10 grid-cols-12">
         <!-- Sidebar and Questions (Mobile Version) -->
-        <div class="mt-5 lg:hidden flex flex-col gap-3">
+        <div class="mt-5  lg:hidden flex flex-col gap-3">
           <div
             v-for="(tab, index) in tabs"
             :key="index"
@@ -14,7 +14,7 @@
           >
             <!-- Tab Header -->
             <div
-              class="flex justify-between items-center cursor-pointer py-2.5 px-4 text-center text-[13px] sm:text-[18px] font-[400] rounded-[6px]"
+              class="flex justify-between items-center cursor-pointer py-2.5 px-4 text-left text-[13px] sm:text-[18px] font-[400] rounded-[6px]"
               :class="{
                 'hover:bg-[#EFF1D980]': selectedSidebarIndex !== index,
                 'bg-[#005B52] text-white': selectedSidebarIndex === index
@@ -69,7 +69,7 @@
           <div
             v-for="(tab, index) in tabs"
             :key="index"
-            class="cursor-pointer py-2.5 px-6 rounded-[6px] text-center text-[18px] font-[400]"
+            class="cursor-pointer py-2.5 px-6 rounded-[6px] text-left text-[18px] font-[400]"
             :class="{
               'hover:bg-[#EFF1D980]': selectedSidebarIndex !== index,
               'bg-[#005B52] text-white': selectedSidebarIndex === index

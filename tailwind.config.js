@@ -8,6 +8,7 @@ export default {
           smm: '767px', // Define the custom breakpoint
           esm: '424px', // Define the custom breakpoint
           lgBig: '1024px',
+          Bigxl: '2400px',
       },
     },
   },

@@ -34,7 +34,7 @@
 
                 </button>
             </div>
-            <div class="grid sm:grid-cols-2 text-black gap-5">
+            <div class="grid sm:grid-cols-2 text-black 2xl:gap-2 gap-5">
                 <div
                     class="bg-white relative rounded-[6px] border-2 border-[#DBF226] rounded-[10px] overflow-hidden p-6 shadow-[0px_0px_0px_1px_#A6A6A64D_inset]">
                    <div class="text-[#f7f8ec] text-[28vw] md:text-[13vw] leading-none 2xl:text-[6vw] font-bold absolute -bottom-3.5 -right-4">01</div>
