@@ -1,10 +1,10 @@
 <template lang="">
   
 <div class="">
-  <div class="max-w-7xl mx-auto py-6 px-4">
+  <div class="max-w-7xl mx-auto 2xl:px-0 py-6 px-4">
     
     <div class="text-start mb-6">
-      <h1 class="text-3xl font-bold mb-5 text-gray-800">Choose the Plan That Fits Your Needs</h1>
+      <h1 class="text-3xl font-bold mb-5 text-gray-800">Choose the Plan <span class="font-normal">That Fits Your Needs</span></h1>
       <p class="sm:text-[15px] text-[13px] mt-2">
         Whether you're starting for free or ready to unlock all features, we have a plan for you.
       </p>
@@ -13,10 +13,10 @@
    
     <div class="grid 2xl:grid-cols-12 gap-8">
       
-      <div class="border 2xl:col-span-4 2xl:h-[606px] shadow-[0_10px_6px_0px_#0000001F] rounded-lg md:flex flex-wrap lg:flex-nowrap 2xl:flex-col bg-white gap-7 py-8 px-6">
+      <div class="border 2xl:col-span-4 2xl:h-[606px] shadow-[0_3px_6px_0px_#0000001F] rounded-lg md:grid flex-wrap lg:flex-nowrap grid-cols-2 2xl:grid-cols-1 gap-6 bg-white gap-7 py-12 px-6">
         <div>
         <h2 class="text-xl font-bold text-gray-800">Free Plan</h2>
-        <p class="text-gray-600 mt-2">
+        <p class="text-gray-600 font-light mt-2">
           Join Thtork today with our free plan and enjoy access to a curated selection of design assets, templates, and photos.
         </p>
         <button class="mt-6 rounded-[4px] bg-[#DBF226] text-black py-4 w-full px-4  font-medium hover:bg-yellow-500">
@@ -56,11 +56,11 @@
       </div>
 
       
-      <div class="border 2xl:col-span-8 w-full min-h-[606px] shadow-[0_10px_6px_0px_#0000001F] mb-10 rounded-lg md:flex-col gap-8 bg-white  py-8 px-6">
+      <div class="border 2xl:col-span-8 w-full min-h-[606px] shadow-[0_3px_6px_0px_#0000001F] mb-10 rounded-lg md:flex-col gap-8 bg-white  py-12 px-8">
         <div class="md:flex gap-8 ">
           <div class="md:w-1/2">
         <h2 class="text-xl font-bold text-gray-800">Pro Plan</h2>
-        <p class="sm:text-[15px] text-[13px] mt-2">
+        <p class="sm:text-[15px] font-light text-[13px] mt-2">
           Take your projects to the next level with Thtork's Pro Plan. Get unlimited downloads, access to premium design assets, exclusive templates, and priority support. Unlock all the tools you need to bring your creative ideas to life.
         </p>
         </div>
@@ -87,7 +87,7 @@
         </ul>
         </div>
         <div class="">
-          <div class=" md:grid grid-cols-2 max-w-4xl mx-auto  w-full  justify-center mt-3 gap-10">
+          <div class=" md:grid grid-cols-2 max-w-4xl 2xl:w-full mx-auto  w-full  justify-center mt-3 gap-6">
         <div class="mt-6">
           <h1 class="font-[400] text-[18px] text-[#4C4C4C] text-center">Monthly Plan</h1>
           <div class="flex items-end space-x-4 mx-auto justify-center mt-6 text-center">
@@ -116,15 +116,24 @@
        
         </div>
         <p class="text-center font-[350] text-sm my-10 text-[#191919]">Tax excluded.</p>
-        <div class="mt-10 flex sm:flex-row flex-col mb-6 sm:mb-16  items-center justify-center gap-3">
+        <div class="mt-10 flex sm:flex-row flex-col   items-center justify-center gap-3">
           <p class="text-sm text-gray-500">Payment Methods:</p>
           <div class="flex items-start gap-1">
-            <div class="border border-[#D9D9D9] rounded-[4px] w-[35px] h-[24px] flex items-center jsutify-center">
-            <img class="mx-auto" src="../public/img/visa-logo.png" />
+            <div class="border border-[#D9D9D9] rounded-[4px] w-[35px] h-[24px] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="8" viewBox="0 0 25 8" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M6.12526 7.75825H4.00494L2.41495 1.69237C2.33949 1.41334 2.17925 1.16667 1.94354 1.0504C1.35531 0.75823 0.707118 0.525705 0 0.408431V0.174895H3.41567C3.88708 0.174895 4.24064 0.525705 4.29957 0.933129L5.12454 5.30865L7.24383 0.174895H9.30522L6.12526 7.75825ZM10.4838 7.75825H8.48129L10.1302 0.174895H12.1327L10.4838 7.75825ZM14.7234 2.27571C14.7823 1.86728 15.1359 1.63374 15.5483 1.63374C16.1965 1.57511 16.9026 1.69238 17.4919 1.98354L17.8454 0.35081C17.2562 0.117274 16.608 0 16.0198 0C14.0762 0 12.662 1.05041 12.662 2.50824C12.662 3.61728 13.6637 4.19961 14.3708 4.55042C15.1359 4.90021 15.4305 5.13375 15.3716 5.48355C15.3716 6.00825 14.7823 6.24178 14.1941 6.24178C13.4869 6.24178 12.7798 6.06688 12.1327 5.77471L11.7791 7.40845C12.4862 7.69962 13.2512 7.81689 13.9584 7.81689C16.1376 7.87451 17.4919 6.82512 17.4919 5.25001C17.4919 3.26647 14.7234 3.15021 14.7234 2.27571ZM24.5 7.75825L22.91 0.174895H21.2022C20.8486 0.174895 20.4951 0.408431 20.3772 0.75823L17.4329 7.75825H19.4943L19.9058 6.65021H22.4386L22.6743 7.75825H24.5ZM21.4968 2.21708L22.085 5.07512H20.4361L21.4968 2.21708Z" fill="#172B85"/>
+</svg>
            </div>
            <div class="border border-[#D9D9D9] bg-[#1F72CD] rounded-[4px] w-[35px] h-[24px] flex items-center justify-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="29" height="8" viewBox="0 0 29 8" fill="none">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M3.18111 0.114258L0 7.361H3.80824L4.28035 6.20557H5.35949L5.8316 7.361H10.0234V6.47914L10.3969 7.361H12.5652L12.9387 6.4605V7.361H21.6566L22.7166 6.23557L23.7092 7.361L28.1868 7.37032L24.9957 3.75786L28.1868 0.114258H23.7786L22.7467 1.21889L21.7854 0.114258H12.3016L11.4872 1.9847L10.6537 0.114258H6.85343V0.966114L6.43068 0.114258H3.18111ZM16.1994 1.14331H21.2055L22.7367 2.84588L24.3172 1.14331H25.8484L23.5219 3.75684L25.8484 6.34025H24.2477L22.7166 4.6179L21.128 6.34025H16.1994V1.14331ZM17.4356 3.16922V2.21997V2.21906H20.5593L21.9223 3.73717L20.4989 5.26357H17.4356V4.22725H20.1667V3.16922H17.4356ZM3.91799 1.14331H5.7743L7.88433 6.05736V1.14331H9.91784L11.5476 4.66666L13.0496 1.14331H15.073V6.34332H13.8418L13.8317 2.26862L12.0368 6.34332H10.9355L9.13052 2.26862V6.34332H6.59773L6.11756 5.17755H3.52338L3.04421 6.3423H1.68717L3.91799 1.14331ZM3.96634 4.09986L4.82101 2.02312L5.6747 4.09986H3.96634Z" fill="white"/>
+</svg>
+           </div>
+           <div class="border border-[#D9D9D9]  rounded-[4px] w-[35px] h-[24px] flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="15" viewBox="0 0 23 15" fill="none">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.25 12.6569C10.0584 13.6852 8.51276 14.306 6.82377 14.306C3.05511 14.306 0 11.2154 0 7.40299C0 3.59057 3.05511 0.5 6.82377 0.5C8.51276 0.5 10.0584 1.12075 11.25 2.14903C12.4416 1.12075 13.9872 0.5 15.6762 0.5C19.4449 0.5 22.5 3.59057 22.5 7.40299C22.5 11.2154 19.4449 14.306 15.6762 14.306C13.9872 14.306 12.4416 13.6852 11.25 12.6569Z" fill="#ED0006"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.25 12.6569C12.7172 11.3908 13.6475 9.5068 13.6475 7.40299C13.6475 5.29917 12.7172 3.41517 11.25 2.14903C12.4416 1.12075 13.9872 0.5 15.6762 0.5C19.4449 0.5 22.5 3.59057 22.5 7.40299C22.5 11.2154 19.4449 14.306 15.6762 14.306C13.9872 14.306 12.4416 13.6852 11.25 12.6569Z" fill="#F9A000"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.25 2.14893C12.7172 3.41506 13.6476 5.29905 13.6476 7.40285C13.6476 9.50665 12.7172 11.3906 11.25 12.6568C9.78287 11.3906 8.85254 9.50665 8.85254 7.40285C8.85254 5.29905 9.78287 3.41506 11.25 2.14893Z" fill="#FF5E00"/>
 </svg>
            </div>
           <div class="border border-[#D9D9D9] rounded-[4px] w-[35px] h-[24px] flex items-center justify-center">

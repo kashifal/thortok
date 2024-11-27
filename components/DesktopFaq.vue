@@ -1,5 +1,5 @@
 <template lang="html">
-    <div class="2xl:max-w-7xl mx-auto px-6 py-16">
+    <div class="2xl:max-w-7xl mx-auto 2xl:px-0 px-6 py-16">
       <h1 class="font-[700] text-[22px] sm:text-[26px] md:text-[30px] lg:text-[52px]">
         Quick Answers<br />
         to Your Questions
@@ -16,7 +16,7 @@
             <div
               class="flex justify-between items-center cursor-pointer py-2.5 px-4 text-center text-[13px] sm:text-[18px] font-[400] rounded-[6px]"
               :class="{
-                'bg-[#EFF1D980]': selectedSidebarIndex !== index,
+                'hover:bg-[#EFF1D980]': selectedSidebarIndex !== index,
                 'bg-[#005B52] text-white': selectedSidebarIndex === index
               }"
               @click="selectSidebar(index)"
@@ -65,13 +65,13 @@
         </div>
   
         <!-- Sidebar (Desktop Version) -->
-        <div class="lg:col-span-3 lg:flex hidden flex-col gap-3">
+        <div class="lg:col-span-2 lg:flex hidden flex-col gap-3">
           <div
             v-for="(tab, index) in tabs"
             :key="index"
             class="cursor-pointer py-2.5 px-6 rounded-[6px] text-center text-[18px] font-[400]"
             :class="{
-              'bg-[#EFF1D980]': selectedSidebarIndex !== index,
+              'hover:bg-[#EFF1D980]': selectedSidebarIndex !== index,
               'bg-[#005B52] text-white': selectedSidebarIndex === index
             }"
             @click="selectSidebar(index)"
@@ -81,7 +81,7 @@
         </div>
   
         <!-- FAQ Content (Desktop Version) -->
-        <div class="lg:col-span-9 lg:-mt-7">
+        <div class="lg:col-span-10 lg:-mt-7">
           <div
             v-for="(question, qIndex) in tabs[selectedSidebarIndex].questions"
             :key="qIndex"

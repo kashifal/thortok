@@ -10,11 +10,11 @@
             v-model="searchQuery"
             type="text" 
             placeholder="Search for anything, try with 'Lifestyle'..." 
-            class="bg-[#F2F2F2] placeholder:text-[#78787899] text-[13px] font-[350] outline-none h-[38px] sm:h-[60px] pl-12 sm:pl-20 md:pl-44 pr-20 sm:pr-36 text-black w-full rounded-[6px]">
+            class="bg-[#F2F2F2] placeholder:text-[#78787899] text-[13px] font-[350] outline-none h-[38px] sm:h-[60px] pl-16 sm:pl-24 md:pl-48 pr-20 sm:pr-36 text-black w-full rounded-[6px]">
 
           <!-- Collection Icon with Dropdown -->
           <div 
-            class="flex absolute top-1/2 -translate-y-1/2 left-1.5 sm:left-3 items-center cursor-pointer border-r pr-1.5 sm:pr-5 border-[#00000080] gap-1 sm:gap-2"
+            class="flex absolute top-1/2 -translate-y-1/2 left-2.5 sm:left-[22px] items-center cursor-pointer border-r pr-2.5 sm:pr-4 border-[#00000080] gap-1 sm:gap-2"
             @click="toggleDropdown">
             <Collection />
             <h3 class="text-[14px] md:flex hidden text-black font-[350]">
@@ -60,15 +60,15 @@
             <button class="bg-[#FFFFFF33] h-fit w-fit inline py-1 px-2.5 rounded-[5px]">your ideas to life.</button>
           </div>
         </div>
-        <div class="lg:flex hidden leading-snug gap-1 flex-wrap lg:flex-row flex-col text-white lg:items-center text-sm font-[350]">
+        <div class="lg:flex hidden leading-snug gap-1 flex-wrap 2xl:flex-nowrap lg:flex-row flex-col text-white lg:items-center text-sm font-[350]">
           <p class="">
             Unleash your creativity with thousands of high-quality
-            <button class="bg-[#FFFFFF33] inline py-1 px-2.5 rounded-[5px]">design assets,</button>
+            <button class="bg-[#FFFFFF33] inline py-1 px-1.5 rounded-[5px]">design assets,</button>
             <span class="inline ml-1">audio, photos, Videos and templates.</span>
             <span class="inline">Whether you’re a creator or a designer, find everything you need to bring</span>
           </p>
           <div class="flex flex-wrap items-center gap-1">
-            <button class="bg-[#FFFFFF33] whitespace-nowrap w-fit inline py-1 px-2.5 rounded-[5px]">your ideas to life.</button>
+            <button class="bg-[#FFFFFF33] whitespace-nowrap w-fit inline py-1 px-1.5 rounded-[5px]">your ideas to life.</button>
           </div>
         </div>
       </div>

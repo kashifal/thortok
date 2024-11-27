@@ -1,10 +1,7 @@
 <template lang="">
   <div class="bg-[#EFF1D9] my-20 relative smm:px-6 py-20 pl-6">
-    <section class="max-w-7xl mx-auto">
-      <div class="underline sm:underline-offset-[16px] underline-offset-4">
-       
-      </div>
-      <div class="flex items-end justify-between">
+    <section class="">
+      <div class="flex 2xl:max-w-7xl mx-auto items-end justify-between">
         <div>
           <h2
           class="lg:text-[20px] sm:text-[17px] md:text-[18px] leading-[28px] sm:leading-[30px] md:leading-[32px] flex itemsc-enter gap-4 lg:leading-[36px] font-[700]"
@@ -12,7 +9,7 @@
           <span class="p-2 bg-[#DBF226] h-fit w-fit rounded-full"> <Featured /> </span
           ><span class="border-b border-black">Featured Creators of the Week</span>
         </h2>
-        <p class="lg:text-[17px] pl-14 text-[13px] sm:text-sm md:text-[15px] leading-[23px] sm:leading-6 md:leading-[27px] lg:leading-[30px] font-[300] pt-3">
+        <p class="lg:text-[17px] text-[13px] sm:text-sm md:text-[15px] leading-[23px] sm:leading-6 md:leading-[27px] lg:leading-[30px] font-[300] pt-3">
           Discover the unique talents and inspiring creations of this week’s standout contributors.
         </p>
         </div>
@@ -48,19 +45,22 @@
       </div>
 
       <Splide
-      class="mt-10"
+      class="mt-6"
       ref="splideRef"
       :options="{
         type: 'loop',
         gap: '1rem',
         drag:false,
-        perPage: 4.2, // Default for screens above 1440px
+        perPage: 7, // Default for screens above 1440px
         pagination: false, // Disable default pagination
         perMove:1,
         arrows: false, // Disable default arrows
         breakpoints: {
-          1700: { // Screens under 1440px
-            perPage: 4,
+          2100: { // Screens under 1440px
+            perPage: 4.5,
+          },
+          1300: { // Screens under 1100px
+            perPage: 3.5,
           },
           1100: { // Screens under 1100px
             perPage: 2.5,
@@ -95,7 +95,7 @@
                   ><div class="relative">
                     <img
                       src="https://s3-alpha-sig.figma.com/img/807c/0eb6/d541b89bff8631a874638024a09c19f7?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZKCGJJnAYY27UHhmC7Qn53IYt9NLiQffQjmilEImFYLlXqfGfWHUa435gS9NaMGxR6MiCInQ0fpq81totZAW7h4VOKUA4ZS8f3z7ZprUvMfQ~umddcXsWGu6GhwX03~AKGyrrgno3aovaQVPoafD~t3~yJE1M2xLSQotB6tyLytxSWdZwBdTJUW1eSQn6Tt1vQqx~RvI4HV6uqE1dkcxOY2hm5dNEB7b63NepztVHOhpIcy5Sr5VPgIejElQc9HiAR10BQQllkaknuy-6Ix15ZH-2sRuZ-1xS2Kymkw0tem8Zjdqw1KPYJdw1gVwZQoQnqlVHQth3vaJrSOSQR8Ojw__"
-                      class="size-[31px] rounded-full"
+                      class="size-[31px] shrink-0 rounded-full"
                       alt=""
                     />
                     <span
@@ -114,12 +114,21 @@
               <h1 class="font-[300]">Ch. Ratna</h1>
               </h3>
               <div class="flex items-center -mr-3">
-                <button
-                  class="flex items-center gap-1 px-[14px] font-medium py-1 rounded-md border-[#FDE047] border text-[#FDE047] hover:bg-[#DBF226] hover:text-black"
-                >
-                  Unfollow
-                </button>
-              </div>
+  <button
+    v-if="i === 1" 
+    class="flex items-center gap-1 px-[14px] font-medium py-1 rounded-md border-[#FDE047] border bg-[#DBF226] text-black"
+  >
+    Unfollow
+  </button>
+  <button
+    v-else 
+    class="flex items-center gap-1 px-[14px] font-medium py-1 rounded-md border-[#FDE047] border text-[#FDE047] hover:bg-[#DBF226] hover:text-black"
+  >
+    <Plus class="w-4" />
+    Follow
+  </button>
+</div>
+
             </div>
             <h1 class="mt-7 sm:text-[17px] md:text-[20px] leading-[36px] font-[700]">Sala Blue</h1>
             <div class="mt-2 flex flex-wrap items-center w-full gap-2 -mb-3">

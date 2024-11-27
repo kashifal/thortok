@@ -243,7 +243,7 @@ onMounted(() => {
           <div
             class="flex justify-between items-center cursor-pointer py-2.5 px-4 text-center text-[13px] sm:text-[18px] font-[400] rounded-[6px]"
             :class="{
-              'bg-[#EFF1D980]': selectedSidebarIndex !== index,
+              'hover:bg-[#EFF1D980] border border-[#E4E4E4]': selectedSidebarIndex !== index,
               'bg-[#005B52] text-white': selectedSidebarIndex === index,
             }"
             @click="selectSidebar(index)"
@@ -276,8 +276,8 @@ onMounted(() => {
                   {{ question.text }}
                 </h2>
                 <span>
-                  <Plus v-if="!openQuestions[index][qIndex]" />
-                  <Minus v-else />
+                  <Plus class="w-3" v-if="!openQuestions[index][qIndex]" />
+                  <Minus class="w-3" v-else />
                 </span>
               </div>
               <p
@@ -298,7 +298,7 @@ onMounted(() => {
           :key="index"
           class="cursor-pointer py-2.5 px-6 rounded-[6px] text-center text-[18px] font-[400]"
           :class="{
-            'bg-[#EFF1D980]': selectedSidebarIndex !== index,
+            'hover:bg-[#EFF1D980]': selectedSidebarIndex !== index,
             'bg-[#005B52] text-white': selectedSidebarIndex === index,
           }"
           @click="selectSidebar(index)"
@@ -326,8 +326,8 @@ onMounted(() => {
             >
               {{ question.text }}
             </h1>
-            <Plus v-if="!openQuestions[selectedSidebarIndex][qIndex]" />
-            <Minus v-else />
+            <Plus class="w-4" v-if="!openQuestions[selectedSidebarIndex][qIndex]" />
+            <Minus class="w-4" v-else />
           </div>
           <p
             v-show="openQuestions[selectedSidebarIndex][qIndex]"

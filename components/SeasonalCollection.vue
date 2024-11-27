@@ -37,7 +37,7 @@
       </div>
 
       <Splide
-        class="mt-10"
+        class="mt-6"
         ref="splideRef"
         :options="{
           type: 'loop',

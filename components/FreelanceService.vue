@@ -1,5 +1,5 @@
 <template lang="">
-    <div class="2xl:max-w-7xl min-h-[507px] h-full grid lg:grid-cols-12 gap-10 mx-auto px-6 py-16">
+    <div class="2xl:max-w-7xl 2xl:px-0 min-h-[507px] h-full grid lg:grid-cols-12 gap-10 mx-auto px-6 py-16">
         <div class="lg:col-span-7 h-full overflow-hidden rounded-[10px]">
             <img src="../public/img/FreelanceProgram.png" alt="" class="w-full object-cover h-full">
         </div>
