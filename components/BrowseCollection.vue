@@ -2,7 +2,7 @@
   <div class="relative">
     <div class="2xl:max-w-7xl   relative overflow-auto w-full mx-auto py-8 pl-6 esm:px-6">
 
-      <h1 class="py-1 border-b border-black text-base inline  sm:text-2xl font-bold text-gray-800 mb-3">Browse by
+      <h1 class="py-1 border-b border-black text-base inline heading sm:text-2xl font-bold text-gray-800 mb-3">Browse by
         collections</h1>
       <p class="text-[#000000] leading-relaxed font-light mt-6">Discover endless possibilities with our curated digital
         resources, perfect for all your creative needs.</p>

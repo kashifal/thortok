@@ -4,7 +4,7 @@
       class=" 2xl:max-w-7xl  w-full mx-auto gap-2 flex-wrap"
     >
       <div class="items-center gap-2">
-        <h1 class="lg:text-[20px] sm:text-[17px] md:text-[18px] leading-[28px] sm:leading-[30px] md:leading-[32px] lg:leading-[36px] font-[700]">Fonts collection</h1>
+        <h1 class="lg:text-[20px] sm:text-[17px] md:text-[18px] leading-[28px] sm:leading-[30px] md:leading-[32px] heading lg:leading-[36px] font-[700]">Fonts collection</h1>
         <p class="lg:text-[17px] text-[13px] sm:text-sm md:text-[15px] leading-[23px] sm:leading-6 md:leading-[27px] lg:leading-[30px] font-[300] pt-3">
           Find the perfect fonts to give your designs a unique and professional
           touch.

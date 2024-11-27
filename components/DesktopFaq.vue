@@ -1,6 +1,6 @@
 <template lang="html">
     <div class="2xl:max-w-7xl mx-auto 2xl:px-0 px-6 py-16">
-      <h1 class="font-[700] text-[22px] sm:text-[26px] md:text-[30px] lg:text-[52px]">
+      <h1 class="font-[700] heading text-[22px] sm:text-[26px] md:text-[30px] lg:text-[52px]">
         Quick Answers<br />
         to Your Questions
       </h1>

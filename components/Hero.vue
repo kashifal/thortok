@@ -4,7 +4,7 @@
       class="bg-[url('/public/img/hero_image.png')] md:py-0 py-10 sm:py-20 text-white px-6 flex items-center w-full sm:min-h-[436px] bg-center relative bg-cover">
       <div class="bg-[#00000080] z-[2] absolute top-0 left-0 h-full w-full"></div>
       <div class="2xl:max-w-7xl w-full relative z-[4] mx-auto">
-        <h1 class="font-[700] text-[22px] leading-relaxed space-y-2 sm:text-[26px] md:text-[30px] lg:text-[52px] ">Discover, Download,<br />Create!</h1>
+        <h1 class="font-[700] text-[22px] heading leading-relaxed space-y-2 sm:text-[26px] md:text-[30px] lg:text-[52px] ">Discover, Download,<br />Create!</h1>
         <div class="relative py-4">
           <input 
             v-model="searchQuery"
