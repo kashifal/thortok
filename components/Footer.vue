@@ -25,7 +25,7 @@
 <div class=" text-white border-b border-[#4b4b4b] font-sans">
     <div class="grid lg:grid-cols-12 gap-6  ">
       <div class="lg:col-span-5  h-full flex  flex-col justify-center  ">
-        <h1 class="text-3xl 2xl:text-5xl font-bold text-white mb-4">
+        <h1 class="text-5xl heading 2xl:text-5xl font-bold text-white mb-4">
           Unlock a World of<br /> Creative Resources!
         </h1>
         <p class="text-gray-300 mb-6">
@@ -160,7 +160,7 @@
   </div>
   
   
-    <div class="text-gray-400">
+    <div class="text-gray-400 mt-10">
       <div class="max-w-7xl mx-auto  py-10">
         <div class="md:grid grid-cols-2 gap-10 md:justify-between">
           
@@ -241,12 +241,12 @@
         <div class="bg-[#DBF226] -rotate-90 absolute top-0 left-[50%] lg:left-0 lg:translate-x-0 -translate-x-1/2 lg:top-0 lg:translate-y-0 -translate-y-[50%] lg:relative shadow-[0px_4px_16px_0px_#0000001A] cursor-pointer size-10 rounded-full flex items-center justify-center">
            <Arrow />              
         </div>
-        <div class="flex whitespace-nowrap md:text-[16px] text-[8px]  md:flex-nowrap  font-light items-center text-[#EDEDED] gap-4">
+        <div class="flex whitespace-nowrap md:text-sm text-[8px]  md:flex-nowrap  font-light items-center text-[#EDEDED] gap-4">
             <a href="#" class="hover:border-[#EDEDED] border-transparent border-b">Privacy</a>
             <a href="#" class="hover:border-[#EDEDED] border-transparent border-b">Terms of Use</a>
             <a href="#" class="hover:border-[#EDEDED] border-transparent border-b">Cookie</a>
             <button class="border flex  items-center gap-2 border-[#787878] bg-[#383838] rounded-[6px] p-2 text-white">English
-               <div class="overflow-hidden w-fit h-fit">
+               <div class="overflow-hidden rounded-full w-fit h-fit">
                 <Flag />       
                </div>             
             </button>

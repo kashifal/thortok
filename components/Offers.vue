@@ -2,7 +2,7 @@
   <div class="mt-8">
     <div class="sm:p-6">
       <section class="2xl:max-w-7xl relative py-5 pl-6 smm:px-6 sm:rounded-xl bg-[#EFF1D9] mx-auto">
-        <h2 class="text-base sm:text-2xl font-bold text-gray-800 mb-3">
+        <h2 class="text-base heading sm:text-2xl font-bold text-gray-800 mb-3">
           Discover our current offers
         </h2>
         <p class="text-gray-600 leading-relaxed font-light mb-6">
@@ -103,7 +103,7 @@
           },
         }">
           <SplideSlide v-for="(item, index) in offers" :key="index"
-            class="bg-white hover:shadow-[2px_-2px_10px_4px_#00000033] py-4 px-4 mb-4 rounded-lg overflow-hidden">
+            class="bg-white hover:shadow-none transition-all duration-200 shadow-[2px_-2px_10px_4px_#00000033] py-4 px-4 mb-4 rounded-lg overflow-hidden">
             <div class="w-full h-44 overflow-hidden  ">
               <img
                 src="https://s3-alpha-sig.figma.com/img/7902/fdc1/d8306f0c995db73be4dc39102a61b942?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NWtYWI1QNz2JscWPU1LXGSoPFSV0Bvtl7gtzBxDNVDfW-hyQckW5~0LVXWUSmsXV~cA0~uqoWPp8jlTDgG1sGbhaLNyK72ei1O1fVC1OXxL8LOaYTXWuL-BLLnaEKcUZodeI3LggZLKG67qJ3pCCUSVhwl0-Ns196wlsf4Cdt9DBhxjaX6PSaikhDRGhxS8tQT1tntQS~3ZYztUNYYhsL3eFu3SkpW55xRZoWw2OIYp71a7yAumCOb8Rz5QgV1Nw4vnyRWin5umqY1VeM4Y6QeW0MBBunKmxolxQMFhswBMIVf2JJl~~SrtLu2DEMRQZJwlVI-PFfx2K8lrx~7NHLg__"

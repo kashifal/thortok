@@ -4,7 +4,7 @@
       <div class="flex items-center  justify-between gap-2 flex-wrap">
         <div class="flex items-center gap-2">
           <SeasonalCollection />
-          <p class="sm:text-[17px] text-[15px] whitespace-nowrap font-[700]">Discover Seasonal Collections</p>
+          <p class="sm:text-[17px] text-[15px] whitespace-nowrap heading font-[700]">Discover Seasonal Collections</p>
         </div>
         <div class="gap-2 mt-[60px] sm:mt-16 w-full flex items-center justify-between   absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-40   sm:hidden">
           <div

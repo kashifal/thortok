@@ -21,7 +21,7 @@
         <div class="bg-black text-white">
         <div class=" grid  lg:grid-cols-2 gap-5 px-6 lg:px-[47px] 2xl:px-0 py-[64px] 2xl:max-w-7xl mx-auto">
             <div class="">
-                <h1 class="font-[700] text-[22px] sm:text-[26px] md:text-[30px] lg:text-[52px] ">
+                <h1 class="font-[700] heading text-[22px] sm:text-[26px] md:text-[30px] lg:text-[52px] ">
                     Monetize Your Talent with Thortok
                 </h1>
                 <p class="font-[300] py-5 text-[17px]">Our platform offers a variety of monetization programs that allow
@@ -34,12 +34,13 @@
 
                 </button>
             </div>
-            <div class="grid sm:grid-cols-2 text-black 2xl:gap-2 gap-5">
+            <div class="grid sm:grid-cols-2 text-black 2xl:gap-2 gap-3">
                 <div
-                    class="bg-white relative rounded-[6px] border-2 border-[#DBF226] rounded-[10px] overflow-hidden p-6 shadow-[0px_0px_0px_1px_#A6A6A64D_inset]">
-                   <div class="text-[#f7f8ec] text-[28vw] md:text-[13vw] leading-none 2xl:text-[6vw] font-bold absolute -bottom-3.5 -right-4">01</div>
-                   <div class="h-full w-full relative z-[4]">
-                   <ContentSharing />
+                    class="bg-white  relative rounded-[6px] border-2 border-[#DBF226] rounded-[10px] overflow-hidden p-6 shadow-[0px_0px_0px_1px_#A6A6A64D_inset]">
+                   <div class="text-[#f7f8ec] text-[28vw] md:text-[14vw] leading-none 2xl:text-[6vw] font-bold absolute -bottom-3.5 -right-4">01</div>
+                   <div class="h-full w-full flex flex-col justify-between relative z-[4]">
+                    <div>
+                    <ContentSharing />
                     <h1 class="md:text-[22px] text-[17px] sm:text-[20px] py-4 font-[700]">
                         Content Sharing <span class="font-[400]">Program</span>
                     </h1>
@@ -48,6 +49,7 @@
                         downloads, the more you earn
 
                     </p>
+                </div>
                     <p class="text-sm font-[350] mt-3">
                         Turn your creativity into profit effortlessly.
                     </p>
@@ -55,10 +57,11 @@
                 </div>
                 <div
                     class="bg-white relative rounded-[6px] border-2 border-[#DBF226] rounded-[10px] overflow-hidden p-6 shadow-[0px_0px_0px_1px_#A6A6A64D_inset]">
-                   <div class="text-[#f7f8ec] text-[28vw] md:text-[13vw] leading-none  2xl:text-[6vw] font-bold absolute -bottom-3.5 -right-4">02</div>
-                   <div class="h-full w-full relative z-[4]">
-                   <ContentSell />
-                        
+                    <div class="text-[#f7f8ec] text-[28vw] md:text-[14vw] leading-none 2xl:text-[6vw] font-bold absolute -bottom-3.5 -right-4">02</div>
+
+                   <div class="h-full w-full flex flex-col justify-between relative z-[4]">
+                    <div class="">
+                    <ContentSell />
                     <h1 class="md:text-[22px] text-[17px] sm:text-[20px] py-4 font-[700]">
                         Sell Content <span class="font-[400]">Program</span>
                     </h1>
@@ -67,6 +70,7 @@
                         Set your own price and sell your digital content directly to our users. Each sale earns you revenue, with a small commission deducted.
 
                     </p>
+                </div>
                     <p class="text-sm font-[350] mt-3">
                         The more you sell, the more you earn.
                     </p>

@@ -5,13 +5,13 @@
         </div>
         <div class="lg:col-span-5 relative h-full">
             <div class="absolute z-0 right-0 bottom-0 leading-[150px] text-[200px] font-[700]  text-[#EFF1D980]">03</div>
-            <div class="flex items-center gap-2">
+            <div class="flex heading items-center gap-2">
               <Freelance class="sm:w-auto w-6" />                
                     <h1 class="font-[700] text-[22px] sm:text-[26px] md:text-[30px] lg:text-[52px] ">
                         Freelance<br />
                     </h1>
             </div>
-            <h1 class="font-[700] relative text-[22px] leading-none lg:flex-nowrap sm:text-[26px] md:text-[30px] lg:text-[52px] ">
+            <h1 class="font-[700]  relative text-[22px] leading-none lg:flex-nowrap sm:text-[26px] md:text-[30px] lg:text-[52px] ">
                 Services <span class="font-[400] relative ">Program</span>
             </h1>
             <h3 class="md:text-[22px] relative text-[17px] sm:text-[20px] font-[400] py-4">Offer Your Services as a Freelance Expert</h3>

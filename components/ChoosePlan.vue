@@ -4,7 +4,7 @@
   <div class="max-w-7xl mx-auto 2xl:px-0 py-6 px-4">
     
     <div class="text-start mb-6">
-      <h1 class="text-3xl 2xl:text-5xl font-bold mb-5 text-gray-800">Choose the Plan <span class="font-normal">That Fits Your Needs</span></h1>
+      <h1 class="text-3xl 2xl:text-5xl heading font-bold mb-5 text-gray-800">Choose the Plan <span class="font-normal">That Fits Your Needs</span></h1>
       <p class="sm:text-[15px] text-[13px] mt-2">
         Whether you're starting for free or ready to unlock all features, we have a plan for you.
       </p>
@@ -15,7 +15,7 @@
       
       <div class="border 2xl:col-span-4 2xl:h-[606px] shadow-[0_3px_6px_0px_#0000001F] rounded-lg md:grid flex-wrap lg:flex-nowrap grid-cols-2 2xl:grid-cols-1 gap-6 bg-white gap-7 py-12 px-6">
         <div>
-        <h2 class="text-xl font-bold text-gray-800">Free Plan</h2>
+        <h2 class="text-xl font-bold heading text-gray-800">Free Plan</h2>
         <p class="text-gray-600 font-light mt-2">
           Join Thtork today with our free plan and enjoy access to a curated selection of design assets, templates, and photos.
         </p>
@@ -59,7 +59,7 @@
       <div class="border 2xl:col-span-8 w-full min-h-[606px] shadow-[0_3px_6px_0px_#0000001F] mb-10 rounded-lg md:flex-col gap-8 bg-white  py-12 px-8">
         <div class="md:flex gap-8 ">
           <div class="md:w-1/2">
-        <h2 class="text-xl font-bold text-gray-800">Pro Plan</h2>
+        <h2 class="text-xl font-bold heading text-gray-800">Pro Plan</h2>
         <p class="sm:text-[15px] font-light text-[13px] mt-2">
           Take your projects to the next level with Thtork's Pro Plan. Get unlimited downloads, access to premium design assets, exclusive templates, and priority support. Unlock all the tools you need to bring your creative ideas to life.
         </p>

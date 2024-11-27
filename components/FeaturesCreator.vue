@@ -7,7 +7,7 @@
           class="lg:text-[20px] sm:text-[17px] md:text-[18px] leading-[28px] sm:leading-[30px] md:leading-[32px] flex itemsc-enter gap-4 lg:leading-[36px] font-[700]"
         >
           <span class="p-2 bg-[#DBF226] h-fit w-fit rounded-full"> <Featured /> </span
-          ><span class="border-b border-black">Featured Creators of the Week</span>
+          ><span class="border-b heading border-black">Featured Creators of the Week</span>
         </h2>
         <p class="lg:text-[17px] text-[13px] sm:text-sm md:text-[15px] leading-[23px] sm:leading-6 md:leading-[27px] lg:leading-[30px] font-[300] pt-3">
           Discover the unique talents and inspiring creations of this week’s standout contributors.
