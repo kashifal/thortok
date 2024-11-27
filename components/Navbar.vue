@@ -28,7 +28,7 @@
       <h1 class="font-[700] text-[8px] truncate sm:text-[10px] md:text-[12px] lg:text-sm">
         Celebrate Khmer New Year with 30% off our contributor collections!
       </h1>
-      <button class="bg-[#0D0D0D] whitespace-nowrap py-[6px] md:py-[7px] lg:py-[2px] lg:px-[14px] md:px-3 px-[10px] rounded-[4px] lg:text-[13px] text-xs font-medium text-white">
+      <button class="bg-[#0D0D0D] whitespace-nowrap py-[6px] md:py-[7px] lg:py-2 lg:px-[14px] md:px-3 px-[10px] rounded-[4px] lg:text-[13px] text-xs font-medium text-white">
         Shop Now
       </button>
       <div class="sm:absolute shrink-0 right-3 cursor-pointer">
@@ -39,7 +39,7 @@
       <nav
         class="bg-white py-4 px-4 sm:px-6 flex items-center justify-between gap-4"
       >
-        <div class="flex lg:items-center gap-2 xl:gap-8">
+        <div class="flex lg:items-center gap-5 xl:gap-8">
           <div @click="toggleDrawer" class="lg:hidden block cursor-pointer">
             <HamBurger />
           </div>
@@ -49,7 +49,7 @@
               
           </a>
            <div
-                class="flex -translate-x-full lg:translate-x-0 lg:p-0 p-6 md:p-10 lg:font-[350] font-medium text-[2vw] lg:text-sm lg:text-black text-white lg:flex-row flex-col lg:relative fixed lg:h-auto h-screen lg:bg-transparent bg-black left-0 top-0 lg:w-auto w-[40%] gap-2 lg:gap-3 xl:gap-3">
+                class="flex -translate-x-full lg:translate-x-0 lg:p-0 p-6 md:p-10 lg:font-[350] font-medium text-[2vw] text-sm xl:text-[13px] lg:text-black text-white lg:flex-row flex-col lg:relative fixed lg:h-auto h-screen lg:bg-transparent bg-black left-0 top-0 lg:w-auto w-[40%] gap-2 lg:gap-[14px] xl:gap-6">
                 <div class="absolute lg:hidden block right-2 top-2 cursor-pointer">
                     <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
                         <path fill="currentColor"
@@ -112,17 +112,17 @@
     </div>
   </transition>
         </div>
-        <div class="flex items-center gap-6">
-          <div class="flex items-center gap-2 md:gap-5">
+        <div class="flex items-center gap-3">
+          <div class="flex items-center gap-2 md:gap-[14px] xl:gap-6">
             <button
-              class="bg-[#EFF1D9] lg:flex hidden text-[13px] font-medium py-2 px-[14px] rounded-[4px] items-center gap-2"
+              class="bg-[#EFF1D9] md:flex hidden text-[13px] xl:text-[12px] font-medium py-2 px-[14px] rounded-[4px] items-center gap-2"
             >
               <AiTool />
               AI Tools
             </button>
             <a
               href="#"
-              class="py-1 sm:flex hidden border-b border-transparent hover:border-black text-sm font-[350] text-black"
+              class="py-1 sm:flex hidden border-b border-transparent hover:border-black text-sm xl:text-[13px] font-[350] text-black"
               >Pricing</a
             >
             <div class="relative">
@@ -139,34 +139,35 @@
             </div>
             <a
               href="#"
-              class="py-1 sm:flex hidden border-b border-transparent hover:border-black text-sm font-[350] text-black"
+              class="py-1 sm:flex hidden border-b border-transparent hover:border-black text-sm xl:text-[13px] font-[350] text-black"
               >Log in</a
             >
             <button
-              class="bg-[#0D0D0D] sm:flex hidden py-[6px] md:py-[7px] lg:py-2 lg:px-[14px] md:px-3 px-[10px] rounded-[4px] lg:text-[13px] text-xs font-medium text-white"
+              class="bg-[#0D0D0D] sm:flex hidden py-[6px] md:py-[7px] lg:py-2 lg:px-[14px] md:px-3 px-[10px] rounded-[4px] text-[13px] xl:text-[12px] text-xs font-medium text-white"
             >
-              Join for free
+              Join <span class="xl:flex ml-1 hidden">for free</span>
             </button>
-            <div class="relative sm:hidden flex ml-2">
+            <div class="relative ml-1">
               <button
                 class="bg-[#F2F2F2] flex items-center overflow-hidden justify-center size-[31px] rounded-full"
               >
-              <!-- <NuxtImg class="object-cover" src="/image.png" /> -->
-              <img class="object-cover" src="../public/img/image.png" alt=""   />
-  
+              <div class="border border-[#DBF226] overflow-hidden">
+                <img src="../public/img/image.png" alt="" class="object-cover " />
+              </div>
+                <!-- <NuxtImg class="object-cover" src="/image.png" /> -->
               </button>
               <div
-                class="bg-[#DBF226] cursor-context-menu absolute -top-2 -right-2.5 text-[8px] font-[400] size-[20px] rounded-full flex items-center justify-center border-2 border-white"
+                class="bg-[#DBF226] cursor-context-menu absolute -top-2 -right-2.5 text-[6px] font-[400] size-[20px] rounded-full flex items-center justify-center border-2 border-white"
               >
                 Pro
               </div>
               <div
-                class="bg-[#78BF39] absolute -bottom-[2px] -right-[2px] text-[8px] font-[400] size-[10px] rounded-full flex items-center justify-center border-2 border-white"
+                class="bg-[#78BF39] absolute -bottom-[2px] -right-[2px] text-[8px] font-[400] size-[10px] rounded-full flex items-center justify-center border border-white"
               ></div>
             </div>
           </div>
           <div
-            class="border-l xl:flex hidden pl-6 border-[#9B9B9B80] items-center gap-2"
+            class="border-l xl:flex hidden pl-3 border-[#9B9B9B80] items-center gap-2"
           >
             <div class="relative">
               <button
@@ -209,16 +210,18 @@
               <button
                 class="bg-[#F2F2F2] flex items-center overflow-hidden justify-center size-[31px] rounded-full"
               >
-                <img src="../public/img/image.png" alt="" class="object-cover" />
+              <div class="border border-[#DBF226] overflow-hidden">
+                <img src="../public/img/image.png" alt="" class="object-cover " />
+              </div>
                 <!-- <NuxtImg class="object-cover" src="/image.png" /> -->
               </button>
               <div
-                class="bg-[#DBF226] cursor-context-menu absolute -top-2 -right-2.5 text-[8px] font-[400] size-[20px] rounded-full flex items-center justify-center border-2 border-white"
+                class="bg-[#DBF226] cursor-context-menu absolute -top-2 -right-2.5 text-[6px] font-[400] size-[20px] rounded-full flex items-center justify-center border-2 border-white"
               >
                 Pro
               </div>
               <div
-                class="bg-[#78BF39] absolute -bottom-[2px] -right-[2px] text-[8px] font-[400] size-[10px] rounded-full flex items-center justify-center border-2 border-white"
+                class="bg-[#78BF39] absolute -bottom-[2px] -right-[2px] text-[8px] font-[400] size-[10px] rounded-full flex items-center justify-center border border-white"
               ></div>
             </div>
           </div>
