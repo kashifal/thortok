@@ -153,6 +153,4 @@ function changeTab(index) {
 }
 </script>
 
-<style scoped>
-/* Add any additional styling as needed */
-</style>
+ 
