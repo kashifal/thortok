@@ -19,7 +19,7 @@
             </marquee>
         </div>
         <div class="bg-black text-white">
-        <div class=" grid  lg:grid-cols-2 gap-5  px-6 lg:px-[47px] py-[64px] 2xl:max-w-7xl mx-auto">
+        <div class=" grid  lg:grid-cols-2 gap-5 px-6 lg:px-[47px] 2xl:px-0 py-[64px] 2xl:max-w-7xl mx-auto">
             <div class="">
                 <h1 class="font-[700] text-[22px] sm:text-[26px] md:text-[30px] lg:text-[52px] ">
                     Monetize Your Talent with Thortok
@@ -37,7 +37,7 @@
             <div class="grid sm:grid-cols-2 text-black gap-5">
                 <div
                     class="bg-white relative rounded-[6px] border-2 border-[#DBF226] rounded-[10px] overflow-hidden p-6 shadow-[0px_0px_0px_1px_#A6A6A64D_inset]">
-                   <div class="text-[#f7f8ec] text-[28vw] md:text-[13vw] leading-none font-bold absolute -bottom-3.5 -right-4">01</div>
+                   <div class="text-[#f7f8ec] text-[28vw] md:text-[13vw] leading-none 2xl:text-[6vw] font-bold absolute -bottom-3.5 -right-4">01</div>
                    <div class="h-full w-full relative z-[4]">
                    <ContentSharing />
                     <h1 class="md:text-[22px] text-[17px] sm:text-[20px] py-4 font-[700]">
@@ -55,7 +55,7 @@
                 </div>
                 <div
                     class="bg-white relative rounded-[6px] border-2 border-[#DBF226] rounded-[10px] overflow-hidden p-6 shadow-[0px_0px_0px_1px_#A6A6A64D_inset]">
-                   <div class="text-[#f7f8ec] text-[28vw] md:text-[13vw] leading-none font-bold absolute -bottom-3.5 -right-4">02</div>
+                   <div class="text-[#f7f8ec] text-[28vw] md:text-[13vw] leading-none  2xl:text-[6vw] font-bold absolute -bottom-3.5 -right-4">02</div>
                    <div class="h-full w-full relative z-[4]">
                    <ContentSell />
                         

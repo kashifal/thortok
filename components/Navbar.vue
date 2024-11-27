@@ -113,7 +113,7 @@
   </transition>
         </div>
         <div class="flex items-center gap-3">
-          <div class="flex items-center gap-2 md:gap-[14px] xl:gap-6">
+          <div class="flex items-center gap-2 sm:gap-3 md:gap-[14px] xl:gap-6">
             <button
               class="bg-[#EFF1D9] md:flex hidden text-[13px] xl:text-[12px] font-medium py-2 px-[14px] rounded-[4px] items-center gap-2"
             >
@@ -145,9 +145,9 @@
             <button
               class="bg-[#0D0D0D] sm:flex hidden py-[6px] md:py-[7px] lg:py-2 lg:px-[14px] md:px-3 px-[10px] rounded-[4px] text-[13px] xl:text-[12px] text-xs font-medium text-white"
             >
-              Join <span class="xl:flex ml-1 hidden">for free</span>
+              Join <span class="xl:flex flex ml-1 lg:hidden">for free</span>
             </button>
-            <div class="relative ml-1">
+            <div class="relative sm:hidden flex ml-1">
               <button
                 class="bg-[#F2F2F2] flex items-center overflow-hidden justify-center size-[31px] rounded-full"
               >
