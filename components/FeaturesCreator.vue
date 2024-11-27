@@ -1,6 +1,6 @@
 <template lang="">
-  <div class="bg-[#EFF1D9] my-20 relative smm:px-6 py-20 pl-6">
-    <section class="">
+  <div class="bg-[#EFF1D9] my-[60px] relative smm:px-6 py-20 pl-6">
+    <section class="2xl:max-w-[90vw] Bigxl:max-w-[70vw] 2xl:mx-auto">
       <div class="flex 2xl:max-w-7xl mx-auto items-end justify-between">
         <div>
           <h2
@@ -51,7 +51,7 @@
         type: 'loop',
         gap: '1rem',
         drag:false,
-        perPage: 7, // Default for screens above 1440px
+        perPage: 6.5, // Default for screens above 1440px
         pagination: false, // Disable default pagination
         perMove:1,
         arrows: false, // Disable default arrows

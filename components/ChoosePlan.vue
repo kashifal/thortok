@@ -4,7 +4,7 @@
   <div class="max-w-7xl mx-auto 2xl:px-0 py-6 px-4">
     
     <div class="text-start mb-6">
-      <h1 class="text-3xl font-bold mb-5 text-gray-800">Choose the Plan <span class="font-normal">That Fits Your Needs</span></h1>
+      <h1 class="text-3xl 2xl:text-5xl font-bold mb-5 text-gray-800">Choose the Plan <span class="font-normal">That Fits Your Needs</span></h1>
       <p class="sm:text-[15px] text-[13px] mt-2">
         Whether you're starting for free or ready to unlock all features, we have a plan for you.
       </p>

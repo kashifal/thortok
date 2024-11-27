@@ -103,7 +103,7 @@
           },
         }">
           <SplideSlide v-for="(item, index) in offers" :key="index"
-            class="bg-white hover:shadow-[0px_10px_6px_2px_#00000033] py-4 px-4 mb-4 rounded-lg overflow-hidden">
+            class="bg-white hover:shadow-[2px_-2px_10px_4px_#00000033] py-4 px-4 mb-4 rounded-lg overflow-hidden">
             <div class="w-full h-44 overflow-hidden  ">
               <img
                 src="https://s3-alpha-sig.figma.com/img/7902/fdc1/d8306f0c995db73be4dc39102a61b942?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NWtYWI1QNz2JscWPU1LXGSoPFSV0Bvtl7gtzBxDNVDfW-hyQckW5~0LVXWUSmsXV~cA0~uqoWPp8jlTDgG1sGbhaLNyK72ei1O1fVC1OXxL8LOaYTXWuL-BLLnaEKcUZodeI3LggZLKG67qJ3pCCUSVhwl0-Ns196wlsf4Cdt9DBhxjaX6PSaikhDRGhxS8tQT1tntQS~3ZYztUNYYhsL3eFu3SkpW55xRZoWw2OIYp71a7yAumCOb8Rz5QgV1Nw4vnyRWin5umqY1VeM4Y6QeW0MBBunKmxolxQMFhswBMIVf2JJl~~SrtLu2DEMRQZJwlVI-PFfx2K8lrx~7NHLg__"
@@ -146,12 +146,14 @@
                   </span>
                   Add to cart
                 </button>
-                <button
+                <button @click="toggleWishlist(index)"
                   class="sm:px-2 px-3 py-2 bg-white sm:text-sm text-[11px] font-semibold text-gray-800 flex gap-1 justify-center items-center border border-[#00000080] rounded-md">
                   <span>
-                    <component :is="index === 0 ? WhisSave : NotSelec" />
+                    <component :is="item.isSaved ? WhisSave : NotSelec" />
                   </span>
-                  <span class="font-light">Wishlist</span>
+                  <span class="font-light">
+                    {{ item.isSaved ? "Wishlist" : "Wishlist" }}
+                  </span>
                 </button>
 
               </div>
@@ -191,57 +193,71 @@ const goPrev = () => {
 };
 
 
-const offers = [
+
+
+const offers = ref([
   {
     name: 'Kashif',
     prod: "Indus app",
     price: 10,
     profile: '',
-    disImg: ''
+    disImg: '',
+    isSaved: false
   }, {
     name: 'Kashif',
     prod: "Indus app",
     price: 10,
     profile: '',
-    disImg: ''
+    disImg: '',
+    isSaved: false
   }, {
     name: 'Kashif',
     prod: "Indus app",
     price: 10,
     profile: '',
-    disImg: ''
+    disImg: '',
+    isSaved: false
   }, {
     name: 'Kashif',
     prod: "Indus app",
     price: 10,
     profile: '',
-    disImg: ''
+    disImg: '',
+    isSaved: false
   }, {
     name: 'Kashif',
     prod: "Indus app",
     price: 10,
     profile: '',
-    disImg: ''
+    disImg: '',
+    isSaved: false
   }, {
     name: 'Kashif',
     prod: "Indus app",
     price: 10,
     profile: '',
-    disImg: ''
+    disImg: '',
+    isSaved: false
   }, {
     name: 'Kashif',
     prod: "Indus app",
     price: 10,
     profile: '',
-    disImg: ''
+    disImg: '',
+    isSaved: false
   }, {
     name: 'Kashif',
     prod: "Indus app",
     price: 10,
     profile: '',
-    disImg: ''
+    disImg: '',
+    isSaved: false
   }
-];
+]);
+
+const toggleWishlist = (index) => {
+  offers.value[index].isSaved = !offers.value[index].isSaved; // Update using offers.value
+};
 </script>
 
 <style scoped></style>

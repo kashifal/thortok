@@ -258,7 +258,7 @@ onMounted(() => {
           <!-- Questions for the Active Tab -->
           <div
             v-if="selectedSidebarIndex === index"
-            class="mt-2 border-t pt-3 border-[#e4e4e4]"
+            class="mt-2 border-t px-4 pt-3 border-[#e4e4e4]"
           >
             <div
               v-for="(question, qIndex) in tab.questions"

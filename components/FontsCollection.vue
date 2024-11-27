@@ -1,7 +1,7 @@
 <template lang="html">
-  <div class="pb-14 pt-6 relative pl-6 md:px-6">
+  <div class="pb-14 pt-6 Bigxl:max-w-[65vw] mx-auto relative pl-6 md:px-6">
     <div
-      class=" 2xl:max-w-7xl w-full mx-auto gap-2 flex-wrap"
+      class=" 2xl:max-w-7xl  w-full mx-auto gap-2 flex-wrap"
     >
       <div class="items-center gap-2">
         <h1 class="lg:text-[20px] sm:text-[17px] md:text-[18px] leading-[28px] sm:leading-[30px] md:leading-[32px] lg:leading-[36px] font-[700]">Fonts collection</h1>

@@ -15,7 +15,7 @@
                 Services <span class="font-[400] relative ">Program</span>
             </h1>
             <h3 class="md:text-[22px] relative text-[17px] sm:text-[20px] font-[400] py-4">Offer Your Services as a Freelance Expert</h3>
-            <p class="font-[300] relative text-[13px] sm:text-[15px] md:text-[17px]">Turn your skills into a source of income by offering freelance services directly on our platform. Whether you’re a designer, developer, or creative professional, connect with clients looking for your expertise. We’ll handle the payments, ensuring a smooth transaction so you can focus on delivering great results. Join the Freelance Services Program and start earning by providing high-quality services.</p>
+            <p class="font-[300] xl:pr-8 relative text-[13px] sm:text-[15px] md:text-[17px]">Turn your skills into a source of income by offering freelance services directly on our platform. Whether you’re a designer, developer, or creative professional, connect with clients looking for your expertise. We’ll handle the payments, ensuring a smooth transaction so you can focus on delivering great results. Join the Freelance Services Program and start earning by providing high-quality services.</p>
             <button class="py-[14px] relative leading-none mt-8 text-white px-8 rounded-[4px] text-[17px] font-[400] flex items-center gap-2 hover:shadow-[0px_4px_16px_0px_#DBF226] bg-black">
                 Learn more 
                 <RightLongArrow />
