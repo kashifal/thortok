@@ -6,16 +6,16 @@
         collections</h1>
       <p class="text-[#000000] leading-relaxed font-light mt-6">Discover endless possibilities with our curated digital
         resources, perfect for all your creative needs.</p>
-      <div class="esm:grid hidden w-full mx-auto  sm:grid-cols-2 md:grid-cols-3 gap-x-5 gap-y-10 mt-10">
+      <div class="esm:grid hidden w-full mx-auto  sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-10 mt-10">
         <div v-for="(card, index) in cards" :key="index" class="hidden esm:flex group sm:w-auto flex-col gap-4">
-          <div class="group-hover: relative rounded-[10px] h-[220px] md:h-[291px] w-full overflow-hidden">
+          <div class="group-hover: relative rounded-[10px] h-[220px] lg:h-[271px] w-full overflow-hidden">
             <div class="w-full grid grid-cols-12 h-[291px] transition-all duration-500 group-hover:scale-[0.99] gap-[2px]">
               <div class="col-span-8 transition-all duration-500  overflow-hidden h-full  w-full">
-                <img :src="card.image" class="h-full  transition-all duration-500 w-full" alt="">
+                <img :src="card.image" class="h-full object-cover transition-all duration-500 w-full" alt="">
               </div>
-              <div class="col-span-4 flex flex-col h-full mt-[1px] overflow-hidden">
+              <div class="col-span-4 flex gap-[2px]  flex-col h-[220px] lg:h-full ">
                 <img v-for="(miniImage, idx) in card.miniImages" :key="idx" :src="miniImage"
-                  class="h-1/2 transition-all duration-500 object-cover w-full" alt="" />
+                  class="h-[50%] transition-all duration-500 object-cover w-full" alt="" />
               </div>
 
             </div>
