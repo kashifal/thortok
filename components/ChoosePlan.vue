@@ -16,7 +16,7 @@
       <div class="border 2xl:col-span-4 2xl:h-[606px] shadow-[0_3px_6px_0px_#0000001F] rounded-lg md:grid flex-wrap lg:flex-nowrap grid-cols-2 2xl:grid-cols-1 gap-6 bg-white gap-7 py-12 px-6">
         <div>
         <h2 class="text-xl font-bold heading text-gray-800">Free Plan</h2>
-        <p class="text-gray-600 font-light mt-2">
+        <p class="sm:text-[15px] xl:text-[17px] font-light text-[13px] ">
           Join Thtork today with our free plan and enjoy access to a curated selection of design assets, templates, and photos.
         </p>
         <button class="mt-6 rounded-[4px] bg-[#DBF226] text-black py-4 w-full px-4  font-medium hover:bg-yellow-500">
@@ -49,7 +49,7 @@
   </li>
 
         </ul>
-        <p class="mt-6 text-sm text-[#005B52] font-medium">
+        <p class="mt-6 text-sm xl:text-[18px] text-[#005B52] font-[400]">
           Sign up and take advantage of all these benefits to boost your creativity!
         </p>
       </div>
@@ -60,7 +60,7 @@
         <div class="md:flex gap-8 ">
           <div class="md:w-1/2">
         <h2 class="text-xl font-bold heading text-gray-800">Pro Plan</h2>
-        <p class="sm:text-[15px] font-light text-[13px] mt-2">
+        <p class="sm:text-[15px] xl:text-[17px] font-light text-[13px] mt-2">
           Take your projects to the next level with Thtork's Pro Plan. Get unlimited downloads, access to premium design assets, exclusive templates, and priority support. Unlock all the tools you need to bring your creative ideas to life.
         </p>
         </div>

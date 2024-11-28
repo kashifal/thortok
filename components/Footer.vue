@@ -28,13 +28,13 @@
         <h1 class="text-5xl heading 2xl:text-5xl font-bold text-white mb-4">
           Unlock a World of<br /> Creative Resources!
         </h1>
-        <p class="text-gray-300 mb-6">
+        <p class="text-gray-300 xl:text-[22px] font-[400] mb-6">
           Sign up for free today and start exploring exclusive digital assets tailored for creators like you.
         </p>
-        <p class="text-gray-400 mb-6">
+        <p class="text-gray-300 xl:text-[17px] font-[300] mb-6">
           Thortok offers thousands of unique digital resources at your fingertips. Whether you're looking for high-quality designs, templates, or creative inspiration, our platform has it all.
         </p>
-        <p class="text-gray-300 mb-6">
+        <p class="text-gray-300 xl:text-[17px] font-[300] mb-6">
           By joining, you'll gain access to daily downloads, exclusive content, and the tools you need to elevate your projects. Don't miss out—join a growing community of creators today!
         </p>
         <a href="#" class="text-[#DBF226] flex gap-3  font-semibold ">
@@ -162,7 +162,7 @@
   
     <div class="text-gray-400 mt-10">
       <div class="max-w-7xl mx-auto  py-10">
-        <div class="md:grid grid-cols-2 gap-10 md:justify-between">
+        <div class="md:grid grid-cols-2 gap-10 xl:gap-0 md:justify-between">
           
           <div class="mb-8 md:mb-0">
             <h2 class="text-white text-[30px] font-bold mb-4">thortok</h2>
@@ -191,10 +191,10 @@
           </div>
   
           
-          <div class="grid grid-cols-2 text-white text-sm sm:grid-cols-4 md:grid-cols-2  gap-x-3 gap-y-10 xl:grid-cols-4">
+          <div class="grid grid-cols-2 font-[300] text-white text-sm sm:grid-cols-4 md:grid-cols-2  gap-x-6 gap-y-10 xl:grid-cols-4">
             <div>
-              <h3 class="text-white font-bold mb-4">Information</h3>
-              <ul class="space-y-2 ">
+              <h3 class="text-white font-bold mb-6">Information</h3>
+              <ul class="space-y-3 ">
                 <li><a href="#" class="hover:underline underline-offset-4 hover:text-gray-200">About Us</a></li>
                 <li><a href="#" class="hover:underline underline-offset-4 hover:text-gray-200">Our Products</a></li>
                 <li><a href="#" class="hover:underline underline-offset-4 hover:text-gray-200">Our Pricing & Plans</a></li>
@@ -202,24 +202,24 @@
               </ul>
             </div>
             <div>
-              <h3 class="text-white font-bold mb-4">Discover</h3>
-              <ul class="space-y-2">
-                <li><a href="#" class="hover:underline underline-offset-4 hover:text-gray-200">Calendar of Festivities</a></li>
+              <h3 class="text-white font-bold mb-6">Discover</h3>
+              <ul class="space-y-3">
+                <li><a href="#" class="hover:underline whitespace-nowrap underline-offset-4 hover:text-gray-200">Calendar of Festivities</a></li>
                 <li><a href="#" class="hover:underline underline-offset-4 hover:text-gray-200">Popular Searches</a></li>
                 <li><a href="#" class="hover:underline underline-offset-4 hover:text-gray-200">Become a Contributor</a></li>
                 <li><a href="#" class="hover:underline underline-offset-4 hover:text-gray-200">Affiliate Program</a></li>
               </ul>
             </div>
             <div>
-              <h3 class="text-white font-bold mb-4">Support</h3>
-              <ul class="space-y-2">
+              <h3 class="text-white font-bold mb-6">Support</h3>
+              <ul class="space-y-3">
                 <li><a href="#" class="hover:underline underline-offset-4 hover:text-gray-200">Contact</a></li>
                 <li><a href="#" class="hover:underline underline-offset-4 hover:text-gray-200">Our Forum</a></li>
               </ul>
             </div>
             <div>
-              <h3 class="text-white font-bold mb-4">Legal</h3>
-              <ul class="space-y-2">
+              <h3 class="text-white font-bold mb-6">Legal</h3>
+              <ul class="space-y-3">
                 <li><a href="#" class="hover:underline underline-offset-4 hover:text-gray-200">Terms & Conditions</a></li>
                 <li><a href="#" class="hover:underline underline-offset-4 hover:text-gray-200">Privacy Policy</a></li>
                 <li><a href="#" class="hover:underline underline-offset-4 hover:text-gray-200">License</a></li>
@@ -237,7 +237,7 @@
       
   <div class="bg-black relative text-white px-4 py-8 md:py-4  lg:px-6">
     <div class="2xl:max-w-7xl px-4 md:px-6 mx-auto flex md:flex-row flex-col-reverse  items-center justify-between gap-3">
-        <p class="text-[11px] sm:text-left text-center">© 2024 Thortok Trademarks and brands are the property of their respective owners.</p>
+        <p class="text-[11px] sm:text-left font-[300] text-center">© 2024 Thortok Trademarks and brands are the property of their respective owners.</p>
         <div class="bg-[#DBF226] -rotate-90 absolute top-0 left-[50%] lg:left-0 lg:translate-x-0 -translate-x-1/2 lg:top-0 lg:translate-y-0 -translate-y-[50%] lg:relative shadow-[0px_4px_16px_0px_#0000001A] cursor-pointer size-10 rounded-full flex items-center justify-center">
            <Arrow />              
         </div>

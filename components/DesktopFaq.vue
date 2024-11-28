@@ -14,10 +14,10 @@
           >
             <!-- Tab Header -->
             <div
-              class="flex justify-between items-center cursor-pointer py-2.5 px-4 text-left text-[13px] sm:text-[18px] font-[400] rounded-[6px]"
+              class="flex justify-between items-center cursor-pointer py-2.5 px-4 text-left text-[13px] sm:text-[18px] font-[300] rounded-[6px]"
               :class="{
-                'hover:bg-[#EFF1D980]': selectedSidebarIndex !== index,
-                'bg-[#005B52] text-white': selectedSidebarIndex === index
+                'hover:bg-[#EFF1D980] hover:font-[400]': selectedSidebarIndex !== index,
+                'bg-[#005B52] text-white font-[400]': selectedSidebarIndex === index
               }"
               @click="selectSidebar(index)"
             >
@@ -69,10 +69,10 @@
           <div
             v-for="(tab, index) in tabs"
             :key="index"
-            class="cursor-pointer py-2.5 px-6 rounded-[6px] text-left text-[18px] font-[400]"
+            class="cursor-pointer py-2.5 px-6 rounded-[6px] text-left text-[18px] font-[300]"
             :class="{
-              'hover:bg-[#EFF1D980]': selectedSidebarIndex !== index,
-              'bg-[#005B52] text-white': selectedSidebarIndex === index
+              'hover:bg-[#EFF1D980] hover:font-[400]': selectedSidebarIndex !== index,
+              'bg-[#005B52] text-white font-[400]': selectedSidebarIndex === index
             }"
             @click="selectSidebar(index)"
           >

@@ -72,7 +72,7 @@
           v-for="(card, index) in cards"
           :key="index"
           :style="{ backgroundImage: `url(${card.image})` }"
-          class="min-h-[65px] overflow-hidden w-[121px] sm:w-[134px] lg:w-[185px] xl:w-[273px] text-sm font-[700] bg-cover text-white rounded-[6px] flex items-center justify-center relative"
+          class="min-h-[65px] hover:shadow-[0px_4px_10px_0px_#DBF226] overflow-hidden w-[121px] sm:w-[134px] lg:w-[185px] xl:w-[273px] text-sm font-[700] bg-cover text-white rounded-[6px] flex items-center justify-center relative"
         >
           <div
             class="bg-[#00000099] z-[2] w-full h-full absolute top-0 left-0"

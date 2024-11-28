@@ -9,7 +9,7 @@
         <div class="esm:grid hidden w-full mx-auto sm:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-10 mt-10">
   <div v-for="(card, index) in cards" :key="index" class="hidden esm:flex sm:w-auto flex-col gap-4">
     <div class="relative rounded-[10px] h-[220px] lg:h-[271px] w-full overflow-hidden">
-      <div class="w-full grid grid-cols-12 h-[291px] gap-[2px]">
+      <div class="w-full grid grid-cols-12 h-[291px] gap-[3px]">
         <!-- Main Image -->
         <a href="#1" class="col-span-8 relative group overflow-hidden h-full w-full">
           <img :src="card.image" class="h-full object-cover group-hover:scale-[1.05]  transition-transform duration-500 w-full hover:scale-[1.05]" alt="">
@@ -97,7 +97,7 @@
         <SplideSlide v-for="(card, index) in cards" :key="index"
           class=" flex flex-col   w-fit whitespace-nowrap overflow-auto   lg:grid-cols-3 gap-x-5 gap-y-6 mt-10">
           <div class="relative rounded-[10px] h-[220px] lg:h-[271px] w-full overflow-hidden">
-      <div class="w-full grid grid-cols-12 h-[291px] gap-[2px]">
+      <div class="w-full grid grid-cols-12 h-[291px] gap-[3px]">
         <!-- Main Image -->
         <a href="#1" class="col-span-8 relative group overflow-hidden h-full w-full">
           <img :src="card.image" class="h-full object-cover group-hover:scale-[1.05]  transition-transform duration-500 w-full hover:scale-[1.05]" alt="">
