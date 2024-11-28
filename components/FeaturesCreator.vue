@@ -88,31 +88,30 @@
           />
           <div class="py-4 mt-2 pr-4">
             <div class="flex justify-between">
-              <h3
-                class=" items-center flex gap-4 text-[10px] sm:text-[11px] md:text-sm text-white"
-              >
-                <span class="flex"
-                  ><div class="relative">
+              <div class="items-center flex gap-4 text-[10px] sm:text-[11px] md:text-sm text-white">
+                <div class="flex items-center">
+                  <div class="relative">
                     <img
                       src="https://s3-alpha-sig.figma.com/img/807c/0eb6/d541b89bff8631a874638024a09c19f7?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZKCGJJnAYY27UHhmC7Qn53IYt9NLiQffQjmilEImFYLlXqfGfWHUa435gS9NaMGxR6MiCInQ0fpq81totZAW7h4VOKUA4ZS8f3z7ZprUvMfQ~umddcXsWGu6GhwX03~AKGyrrgno3aovaQVPoafD~t3~yJE1M2xLSQotB6tyLytxSWdZwBdTJUW1eSQn6Tt1vQqx~RvI4HV6uqE1dkcxOY2hm5dNEB7b63NepztVHOhpIcy5Sr5VPgIejElQc9HiAR10BQQllkaknuy-6Ix15ZH-2sRuZ-1xS2Kymkw0tem8Zjdqw1KPYJdw1gVwZQoQnqlVHQth3vaJrSOSQR8Ojw__"
-                      class="size-[31px] shrink-0 rounded-full"
-                      alt=""
+                      class="w-[31px] h-[31px] shrink-0 rounded-full"
+                      alt="Profile Image"
                     />
-                    <span
-                        ><h2
-                          class="text-[5px] text-black absolute p-1 text-center flex items-center border-2 border-[#0D0D0D] -top-2 left-6 size-5   justify-center bg-[#DBF226] font-normal rounded-full"
-                        >
-                          Pro
-                        </h2></span
-                      >
-                    <span
-                      ><h1
-                        class="absolute size-[8px] flex items-center justify-center bg-[#78BF39] border border-[#0D0D0D] top-[22px] -right-[2px] rounded-full"
-                      ></h1
-                    ></span></div
-                ></span>
-              <h1 class="font-[300]">Ch. Ratna</h1>
-              </h3>
+                    <!-- Pro Badge -->
+                    <div
+                      class="text-[5px] text-black absolute p-1 text-center border-2 border-[#0D0D0D] -top-2 left-6 w-5 h-5 flex items-center justify-center bg-[#DBF226] font-normal rounded-full"
+                    >
+                      Pro
+                    </div>
+                    <!-- Status Indicator -->
+                    <div
+                      class="absolute w-2 h-2 flex items-center justify-center bg-[#78BF39] border border-[#0D0D0D] top-[22px] -right-[2px] rounded-full"
+                    ></div>
+                  </div>
+                </div>
+                <!-- User Name -->
+                <span class="font-[300]">Ch. Ratna</span>
+              </div>
+              
               <div class="flex items-center -mr-3">
   <button
     v-if="i === 1" 
