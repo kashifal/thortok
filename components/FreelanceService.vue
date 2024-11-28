@@ -4,7 +4,7 @@
             <img src="../public/img/FreelanceProgram.png" alt="" class="w-full object-cover h-full">
         </div>
         <div class="lg:col-span-5 relative h-full">
-            <div class="absolute z-0 right-0 bottom-0 leading-[150px] text-[200px] font-[700]  text-[#EFF1D980]">03</div>
+            <div class="absolute z-0 right-0 bottom-0 leading-[150px] text-[200px] font-extrabold  text-[#EFF1D980]">03</div>
             <div class="flex heading items-center gap-2">
               <Freelance class="sm:w-auto w-6" />                
                     <h1 class="font-[700] text-[22px] sm:text-[26px] md:text-[30px] lg:text-[52px] ">
